@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>SECURE BHARAT SUMMIT | Encrypted Infrastructure</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Manrope:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "inverse-primary": "#7743b5",
+                    "surface-tint": "#dab9ff",
+                    "tertiary-container": "#8f3447",
+                    "on-primary-container": "#dbbbff",
+                    "on-secondary-container": "#005950",
+                    "secondary-fixed": "#4ffbe6",
+                    "on-tertiary-container": "#ffb4be",
+                    "tertiary-fixed": "#ffd9dd",
+                    "on-tertiary-fixed": "#400013",
+                    "on-tertiary-fixed-variant": "#7e273b",
+                    "surface-container-high": "#2a2a2a",
+                    "on-secondary-fixed-variant": "#005048",
+                    "on-error": "#690005",
+                    "inverse-surface": "#e5e2e1",
+                    "outline-variant": "#494456",
+                    "primary-fixed-dim": "#dab9ff",
+                    "surface-dim": "#131313",
+                    "primary": "#dab9ff",
+                    "on-error-container": "#ffdad6",
+                    "primary-fixed": "#eedbff",
+                    "on-primary": "#460283",
+                    "on-primary-fixed-variant": "#5e289b",
+                    "surface-container-low": "#1c1b1b",
+                    "primary-container": "#6c37a9",
+                    "secondary-container": "#00d8c4",
+                    "secondary": "#46f5e0",
+                    "surface-container-highest": "#353534",
+                    "on-surface-variant": "#cbc3d9",
+                    "error": "#ffb4ab",
+                    "on-primary-fixed": "#2a0053",
+                    "surface-bright": "#393939",
+                    "inverse-on-surface": "#313030",
+                    "surface-container": "#201f1f",
+                    "background": "#131313",
+                    "tertiary": "#ffb2bc",
+                    "secondary-fixed-dim": "#17deca",
+                    "on-background": "#e5e2e1",
+                    "outline": "#948da2",
+                    "tertiary-fixed-dim": "#ffb2bc",
+                    "surface": "#131313",
+                    "on-surface": "#e5e2e1",
+                    "error-container": "#93000a",
+                    "on-tertiary": "#600f26",
+                    "surface-container-lowest": "#0e0e0e",
+                    "on-secondary-fixed": "#00201c",
+                    "on-secondary": "#003731",
+                    "surface-variant": "#353534"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Space Grotesk"],
+                    "body": ["Manrope"],
+                    "label": ["Space Grotesk"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .hex-grid {
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='35' viewBox='0 0 40 35'%3E%3Cpath d='M20 0l20 10v15L20 35 0 25V10z' fill='none' stroke='%2346f5e0' stroke-opacity='0.05'/%3E%3C/svg%3E");
+        }
+        .scanlines {
+            background: linear-gradient(to bottom, transparent 50%, rgba(0, 0, 0, .05) 51%);
+            background-size: 100% 4px;
+        }
+        .glass-panel {
+            background: rgba(32, 31, 31, 0.6);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(70, 245, 224, 0.1);
+        }
+        .neon-glow-primary {
+            box-shadow: 0 0 25px rgba(218, 185, 255, 0.15);
+        }
+        .neon-glow-secondary {
+            box-shadow: 0 0 25px rgba(70, 245, 224, 0.15);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body selection:bg-secondary selection:text-on-secondary-fixed overflow-x-hidden">
+<!-- Global Hex Grid Overlay -->
+<div class="fixed inset-0 hex-grid pointer-events-none z-0"></div>
+<div class="fixed inset-0 scanlines pointer-events-none z-10 opacity-30"></div>
+<!-- Top Navigation Shell -->
+<header class="fixed top-0 w-full z-50 flex justify-between items-center px-8 py-4 bg-slate-950/40 backdrop-blur-xl border-b border-[#46f5e0]/20">
+<div class="flex items-center gap-3">
+<span class="text-2xl font-bold tracking-tighter text-[#46f5e0] drop-shadow-[0_0_8px_rgba(70,245,224,0.6)] font-headline">SECURE BHARAT SUMMIT</span>
+</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-[#46f5e0] border-b-2 border-[#46f5e0] pb-1 font-headline text-sm uppercase tracking-widest" href="#">Workshops</a>
+<a class="text-slate-400 hover:text-[#dab9ff] transition-colors font-headline text-sm uppercase tracking-widest" href="#">Sessions</a>
+<a class="text-slate-400 hover:text-[#dab9ff] transition-colors font-headline text-sm uppercase tracking-widest" href="#">Panels</a>
+<a class="text-slate-400 hover:text-[#dab9ff] transition-colors font-headline text-sm uppercase tracking-widest" href="#">Hackathon</a>
+</nav>
+<button class="bg-primary hover:bg-primary-container text-on-primary font-headline font-bold px-6 py-2 rounded-lg transition-all scale-95 duration-300 ease-out hover:scale-100 hover:shadow-[0_0_15px_rgba(218,185,255,0.3)]">
+            REGISTER NOW
+        </button>
+</header>
+<main class="relative z-20 pt-24">
+<!-- Hero Section -->
+<section class="min-h-screen flex flex-col items-center justify-center text-center px-4 relative overflow-hidden">
+<!-- Background Light Leak -->
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-primary/10 rounded-full blur-[120px] -z-10"></div>
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-secondary/5 rounded-full blur-[100px] -z-10 animate-pulse"></div>
+<!-- Terminal Decors -->
+<div class="mb-6 flex items-center gap-4 opacity-70">
+<div class="h-[1px] w-12 bg-secondary"></div>
+<span class="text-secondary font-headline text-xs tracking-[0.3em] uppercase">Status: System Online // Protocol Alpha</span>
+<div class="h-[1px] w-12 bg-secondary"></div>
+</div>
+<h1 class="font-headline text-6xl md:text-9xl font-bold tracking-tighter mb-8 bg-gradient-to-b from-white via-primary to-primary-container bg-clip-text text-transparent drop-shadow-[0_0_30px_rgba(218,185,255,0.4)]">
+                SECURE BHARAT SUMMIT 26
+            </h1>
+<div class="flex flex-wrap justify-center gap-6 mb-12">
+<div class="glass-panel px-6 py-3 rounded-full flex items-center gap-3 border-l-2 border-l-secondary neon-glow-secondary">
+<span class="material-symbols-outlined text-secondary text-xl">calendar_today</span>
+<span class="font-headline font-semibold text-lg tracking-tight">2nd May 2026</span>
+</div>
+<div class="glass-panel px-6 py-3 rounded-full flex items-center gap-3 border-l-2 border-l-primary neon-glow-primary">
+<span class="material-symbols-outlined text-primary text-xl">location_on</span>
+<span class="font-headline font-semibold text-lg tracking-tight">GGSIPU EDC Auditorium</span>
+</div>
+</div>
+<div class="max-w-2xl text-on-surface-variant font-body text-lg leading-relaxed mb-12 opacity-80">
+                The nexus of defense, encryption, and cyber-resilience. Join the nation's premier tactical gathering of security architects and white-hat operatives.
+            </div>
+<div class="flex flex-col md:flex-row gap-6">
+<button class="px-10 py-4 bg-primary text-on-primary font-headline font-bold text-lg rounded-xl hover:scale-105 transition-transform duration-300 flex items-center gap-3 group">
+                    DECRYPT ACCESS
+                    <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+<button class="px-10 py-4 border border-secondary text-secondary font-headline font-bold text-lg rounded-xl hover:bg-secondary/10 transition-all duration-300">
+                    VIEW MISSION INTEL
+                </button>
+</div>
+</section>
+<!-- Feature Grid (Bento Style) -->
+<section class="max-w-7xl mx-auto px-8 py-24">
+<div class="flex flex-col mb-16">
+<span class="text-secondary font-headline text-xs tracking-widest uppercase mb-2">Operational Tracks</span>
+<h2 class="text-4xl md:text-5xl font-headline font-bold text-white tracking-tight">MISSION MODULES</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+<!-- Card 1: Tech Workshop -->
+<div class="md:col-span-7 group relative glass-panel rounded-full overflow-hidden p-8 flex flex-col justify-end min-h-[400px]">
+<div class="absolute top-0 right-0 p-8">
+<span class="material-symbols-outlined text-secondary text-5xl opacity-40 group-hover:opacity-100 transition-opacity" style="font-variation-settings: 'FILL' 1;">terminal</span>
+</div>
+<div class="absolute inset-0 z-0 overflow-hidden">
+<img class="w-full h-full object-cover opacity-20 group-hover:scale-110 transition-transform duration-700 grayscale hover:grayscale-0" data-alt="extreme close up of green circuit board with neon lighting and data transmission visual effects" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDkHsjCWMI_p3e9Oqbe5yjr23jLSyqox7XG618xC7K-iQNC73-OPK3x6oljzJ_T-HcTx_teSSVkMiOILq2JRoJnvMcraEzVwSy0l_9K-8WjCCKVngdCQ7T2ulimk1KxpVnoRyrzG0Whkc-rwMbn007XQb3ryLbL3Z7t-ADqu3YvbCKLI5FOaWY47W2gOnAlhNA-vMD8f4hYIsFZ5y0J1MkjU8rFGJtRyXiSQ1oDC08pUc_C0god21e21srvmJEoX89pfsKQqMLKWhY"/>
+</div>
+<div class="relative z-10">
+<div class="inline-block px-3 py-1 rounded bg-secondary/20 text-secondary text-[10px] font-bold tracking-widest uppercase mb-4">Hands-on Labs</div>
+<h3 class="text-3xl font-headline font-bold text-white mb-2">Tech Workshop</h3>
+<p class="text-on-surface-variant max-w-md">Live exploit demonstrations and defensive configuration training led by industry veterans.</p>
+</div>
+</div>
+<!-- Card 2: Expert Sessions -->
+<div class="md:col-span-5 group relative glass-panel rounded-full overflow-hidden p-8 flex flex-col justify-end min-h-[400px]">
+<div class="absolute top-0 left-0 p-8">
+<span class="material-symbols-outlined text-primary text-5xl opacity-40 group-hover:opacity-100 transition-opacity">shield_person</span>
+</div>
+<div class="absolute inset-0 z-0 overflow-hidden">
+<img class="w-full h-full object-cover opacity-20 group-hover:scale-110 transition-transform duration-700 grayscale" data-alt="server rack room with glowing purple and blue led lights and futuristic perspective" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBRUDt6cSEGwKo4SuH5FNFLeUhu6-uE8sPw5coMmzceUR32sPaqF-bW_6qx5h_mcnwuj85oy3RGSfPSrj8YU5VctUe3Q5NxOHlQCKnPoVvujhjnLIYRPOXozGqPgvwupzfX5yut_4WLYp4R9jE_q3Umay-R-PMrTv2gda2U94cGKG7gkJQX_TUIxDGSY92G9AuvEkneQZD9TUIrbPnWPc7xvvvVG_lArCTGQjw7Rc4pW2eNRUKuV4KVd6RY7j0dxUnu5a13K5YXAI8"/>
+</div>
+<div class="relative z-10">
+<div class="inline-block px-3 py-1 rounded bg-primary/20 text-primary text-[10px] font-bold tracking-widest uppercase mb-4">Deep Dive</div>
+<h3 class="text-3xl font-headline font-bold text-white mb-2">Expert Sessions</h3>
+<p class="text-on-surface-variant">Masterclasses on zero-trust architecture, cloud hardening, and AI-driven threat hunting.</p>
+</div>
+</div>
+<!-- Card 3: Panel Discussion -->
+<div class="md:col-span-5 group relative glass-panel rounded-full overflow-hidden p-8 flex flex-col justify-end min-h-[400px]">
+<div class="absolute top-0 right-0 p-8">
+<span class="material-symbols-outlined text-secondary text-5xl opacity-40 group-hover:opacity-100 transition-opacity">groups</span>
+</div>
+<div class="absolute inset-0 z-0 overflow-hidden">
+<img class="w-full h-full object-cover opacity-20 group-hover:scale-110 transition-transform duration-700 grayscale" data-alt="glowing global digital network map with futuristic lines and connections on dark background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCvpmlUfb8r6UQVI9MX1pnW1mokc7gjuIybjoRXoI5KiHjcRovYlFLx4lE2HnSX_qb3ujQwAWqTgMxlo0CIhDDjep5PhtE7oD4lLYBbmJ5gojdtHKlUlY9ol8Je832xNG4zU1rhHhWTLY_4V_k-qvmDiF0aDzwZf9_edak3RDSqRIBHJKnqY56CVNS60sV4qyTTWMgXqsHMYGO81R_mf0COEmwI2A_pAEDDckpLWvyngpWFy1DduHBRv3DiLt2-YaOuq-rRFM1rh4A"/>
+</div>
+<div class="relative z-10">
+<div class="inline-block px-3 py-1 rounded bg-secondary/20 text-secondary text-[10px] font-bold tracking-widest uppercase mb-4">Strategic Dialogue</div>
+<h3 class="text-3xl font-headline font-bold text-white mb-2">Panel Discussion</h3>
+<p class="text-on-surface-variant">Policy makers and CTOs debating the future of national cyber-sovereignty and digital infrastructure.</p>
+</div>
+</div>
+<!-- Card 4: Cyber Nexus Hackathon -->
+<div class="md:col-span-7 group relative glass-panel rounded-full overflow-hidden p-8 flex flex-col justify-end min-h-[400px]">
+<div class="absolute top-0 left-0 p-8">
+<span class="material-symbols-outlined text-primary text-5xl opacity-40 group-hover:opacity-100 transition-opacity" style="font-variation-settings: 'FILL' 1;">security</span>
+</div>
+<div class="absolute inset-0 z-0 overflow-hidden">
+<img class="w-full h-full object-cover opacity-20 group-hover:scale-110 transition-transform duration-700 grayscale" data-alt="close up of code on a monitor with distorted digital glitch effects and neon overlays" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDl3u5Gc4W9PqIhf6ngPri2D7ujHJMafHaHzH_6L_EO5HlHe_Sqm6UPMHYq6oTOAIbI2ekmbQtWcfaKB6L0avZYA7KzwsktSOhDtIux-AC_QwFtJAJpgI8rdIFrmw52MVNUQt3Et23zfYT3mvtQAkacBQPfCzYrZhTVFyYooL54aV0MWBwGfhdtYWYFzCPH9LbaRE2beBvA6_7kN1PPOTlmyty_IWuY7lHsIHGQYMMuZrlTSeMlW5H7LjAIu-zrIC0oP1vEfBy5yV4"/>
+</div>
+<div class="relative z-10">
+<div class="inline-block px-3 py-1 rounded bg-primary/20 text-primary text-[10px] font-bold tracking-widest uppercase mb-4">Combat Simulation</div>
+<h3 class="text-3xl font-headline font-bold text-white mb-2">Cyber Nexus Hackathon</h3>
+<p class="text-on-surface-variant max-w-md">24-hour Capture The Flag challenge. Breach the perimeter. Secure the flag. Claim the bounty.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Command Console Section -->
+<section class="max-w-7xl mx-auto px-8 py-24">
+<div class="glass-panel p-1 border-t-2 border-t-primary rounded-xl">
+<div class="bg-surface-container-lowest p-8 flex flex-col md:flex-row items-center justify-between gap-12">
+<div class="max-w-xl">
+<h3 class="text-3xl font-headline font-bold text-white mb-6">INTEL FEED OVERRIDE</h3>
+<div class="space-y-4">
+<div class="flex gap-4 p-4 rounded bg-surface-container border-l-2 border-secondary">
+<div class="text-secondary font-headline font-bold">14:02</div>
+<div class="text-on-surface-variant text-sm">Keynote: General VK Singh confirms attendance for Inauguration.</div>
+</div>
+<div class="flex gap-4 p-4 rounded bg-surface-container border-l-2 border-primary">
+<div class="text-primary font-headline font-bold">12:45</div>
+<div class="text-on-surface-variant text-sm">Nexus Hackathon Bounty pool increased to 500,000 INR.</div>
+</div>
+<div class="flex gap-4 p-4 rounded bg-surface-container border-l-2 border-secondary">
+<div class="text-secondary font-headline font-bold">09:10</div>
+<div class="text-on-surface-variant text-sm">Workshop registration reaches 85% capacity. Secure slots now.</div>
+</div>
+</div>
+</div>
+<div class="relative w-full md:w-1/3 aspect-square rounded-full border border-primary/20 flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 border-[10px] border-secondary/10 border-dashed rounded-full animate-[spin_20s_linear_infinite]"></div>
+<div class="text-center">
+<div class="text-primary font-headline text-5xl font-bold mb-1">98%</div>
+<div class="text-on-surface-variant text-xs uppercase tracking-widest font-bold">System Hardened</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer Shell -->
+<footer class="w-full py-12 px-8 flex flex-col md:flex-row justify-between items-center gap-4 bg-[#131313] border-t border-[#dab9ff]/10 relative z-30">
+<div class="text-slate-500 font-['Manrope'] text-xs uppercase tracking-widest">
+            © 2024 SECURE BHARAT SUMMIT. ENCRYPTED INFRASTRUCTURE.
+        </div>
+<div class="flex gap-8">
+<a class="text-slate-500 hover:text-[#dab9ff] transition-opacity duration-500 font-['Manrope'] text-xs uppercase tracking-widest" href="#">Privacy Protocol</a>
+<a class="text-slate-500 hover:text-[#dab9ff] transition-opacity duration-500 font-['Manrope'] text-xs uppercase tracking-widest" href="#">Security Standards</a>
+<a class="text-slate-500 hover:text-[#dab9ff] transition-opacity duration-500 font-['Manrope'] text-xs uppercase tracking-widest" href="#">Contact Command</a>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-2 h-2 rounded-full bg-secondary animate-pulse"></div>
+<span class="text-[#46f5e0] font-['Manrope'] text-xs uppercase tracking-widest">SECURE LINK ESTABLISHED</span>
+</div>
+</footer>
+</body></html>
