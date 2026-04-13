@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>CYBER NEXUS | SECURE BHARAT SUMMIT</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;900&amp;family=Manrope:wght@300;400;500;600;700;800&amp;family=Orbitron:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "surface-container-low": "#080614",
+                      "surface-tint": "#bc13fe",
+                      "tertiary-dim": "#39ff14",
+                      "secondary-container": "#004b54",
+                      "surface-container": "#0d0a1f",
+                      "surface-variant": "#1a1635",
+                      "on-error": "#ffffff",
+                      "surface-container-highest": "#130f2b",
+                      "surface-bright": "#221d45",
+                      "primary-dim": "#d600ff",
+                      "on-primary": "#000000",
+                      "on-primary-fixed-variant": "#ffffff",
+                      "error-container": "#ff003c",
+                      "on-tertiary-fixed": "#000000",
+                      "tertiary-fixed-dim": "#39ff14",
+                      "on-surface-variant": "#b8b4cf",
+                      "surface-container-lowest": "#020108",
+                      "primary": "#d600ff",
+                      "on-secondary": "#000000",
+                      "inverse-on-surface": "#ffffff",
+                      "surface-container-high": "#110d28",
+                      "outline-variant": "#4d486d",
+                      "inverse-surface": "#ffffff",
+                      "primary-fixed-dim": "#d600ff",
+                      "on-secondary-fixed": "#000000",
+                      "secondary-dim": "#00f2ff",
+                      "secondary-fixed-dim": "#00f2ff",
+                      "tertiary-container": "#0b3d04",
+                      "on-primary-fixed": "#000000",
+                      "inverse-primary": "#d600ff",
+                      "surface": "#050411",
+                      "secondary-fixed": "#00f2ff",
+                      "secondary": "#00f2ff",
+                      "surface-dim": "#050411",
+                      "tertiary-fixed": "#39ff14",
+                      "outline": "#8b85b2",
+                      "error-dim": "#ff003c",
+                      "on-error-container": "#ffffff",
+                      "background": "#020108",
+                      "primary-container": "#4a0058",
+                      "error": "#ff003c",
+                      "on-secondary-fixed-variant": "#00f2ff",
+                      "on-secondary-container": "#ffffff",
+                      "primary-fixed": "#d600ff",
+                      "on-primary-container": "#ffffff"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0px",
+                      "lg": "0.125rem",
+                      "xl": "0.25rem",
+                      "full": "9999px"
+              },
+              "fontFamily": {
+                      "headline": ["Orbitron", "Space Grotesk"],
+                      "body": ["Manrope"],
+                      "label": ["Space Grotesk"]
+              }
+            },
+          },
+        }
+    </script>
+<style type="text/tailwindcss">
+        :root {
+            --neon-purple: #d600ff;
+            --neon-blue: #00f2ff;
+            --neon-green: #39ff14;
+        }
+        .glass-terminal {
+            background: rgba(13, 10, 31, 0.7);
+            backdrop-filter: blur(25px) saturate(180%);
+            border: 2px solid rgba(214, 0, 255, 0.3);
+            box-shadow: 
+                0 10px 30px -10px rgba(0, 0, 0, 0.5),
+                inset 0 0 15px rgba(214, 0, 255, 0.1),
+                0 0 20px rgba(214, 0, 255, 0.1);
+            transform: perspective(1000px) rotateX(2deg);
+        }
+        .glow-border-blue {
+            border: 2px solid var(--neon-blue);
+            box-shadow: 0 0 15px rgba(0, 242, 255, 0.4), inset 0 0 10px rgba(0, 242, 255, 0.2);
+        }
+        .glow-border-purple {
+            border: 2px solid var(--neon-purple);
+            box-shadow: 0 0 15px rgba(214, 0, 255, 0.4), inset 0 0 10px rgba(214, 0, 255, 0.2);
+        }
+        .glow-border-green {
+            border: 2px solid var(--neon-green);
+            box-shadow: 0 0 15px rgba(57, 255, 20, 0.4), inset 0 0 10px rgba(57, 255, 20, 0.2);
+        }
+        .digital-rain {
+            background-image: linear-gradient(180deg, rgba(57, 255, 20, 0.05) 0%, transparent 100%);
+            background-size: 100% 30px;
+        }
+        .hero-title-gradient {
+            background: linear-gradient(to bottom, #fff 0%, var(--neon-blue) 50%, #0088ff 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            filter: drop-shadow(0 0 15px rgba(0, 242, 255, 0.8));
+        }
+        .hologram-effect {
+            position: relative;
+            overflow: hidden;
+        }
+        .hologram-effect::after {
+            content: "";
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: repeating-linear-gradient(0deg, rgba(0,0,0,0.1), rgba(0,0,0,0.1) 1px, transparent 1px, transparent 2px);
+            pointer-events: none;
+        }
+        .scanline {
+            width: 100%;
+            height: 2px;
+            background: rgba(0, 242, 255, 0.2);
+            position: absolute;
+            z-index: 20;
+            top: 0;
+            box-shadow: 0 0 10px var(--neon-blue);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body selection:bg-primary selection:text-white">
+<div class="fixed inset-0 pointer-events-none z-0">
+<div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')] opacity-20"></div>
+<div class="absolute top-0 left-0 w-full h-full digital-rain opacity-30"></div>
+<div class="absolute top-[-10%] right-[-10%] w-[50%] h-[50%] bg-primary/20 blur-[120px] rounded-full"></div>
+<div class="absolute bottom-[-10%] left-[-10%] w-[50%] h-[50%] bg-secondary/20 blur-[120px] rounded-full"></div>
+</div>
+<nav class="fixed top-0 left-0 w-full z-50 bg-surface-container-lowest/90 backdrop-blur-2xl border-b-2 border-primary/40 flex items-center justify-between px-6 md:px-12 py-4">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 border-2 border-secondary flex items-center justify-center rotate-45">
+<span class="material-symbols-outlined text-secondary text-sm -rotate-45">hub</span>
+</div>
+<div class="text-2xl font-headline font-black italic tracking-tighter text-secondary drop-shadow-[0_0_10px_rgba(0,242,255,0.7)]">
+            CYBER NEXUS
+        </div>
+</div>
+<div class="hidden md:flex gap-10 items-center">
+<a class="font-headline tracking-[0.2em] uppercase text-[10px] font-bold text-white/50 hover:text-secondary transition-all flex items-center gap-1 group" href="#">
+<span class="w-1 h-1 bg-secondary opacity-0 group-hover:opacity-100 transition-opacity"></span> CHALLENGES
+        </a>
+<a class="font-headline tracking-[0.2em] uppercase text-[10px] font-bold text-white/50 hover:text-secondary transition-all flex items-center gap-1 group" href="#">
+<span class="w-1 h-1 bg-secondary opacity-0 group-hover:opacity-100 transition-opacity"></span> TIMELINE
+        </a>
+<a class="font-headline tracking-[0.2em] uppercase text-[10px] font-bold text-white/50 hover:text-secondary transition-all flex items-center gap-1 group" href="#">
+<span class="w-1 h-1 bg-secondary opacity-0 group-hover:opacity-100 transition-opacity"></span> PRIZES
+        </a>
+<a class="font-headline tracking-[0.2em] uppercase text-[10px] font-bold text-white/50 hover:text-secondary transition-all flex items-center gap-1 group" href="#">
+<span class="w-1 h-1 bg-secondary opacity-0 group-hover:opacity-100 transition-opacity"></span> SQUAD
+        </a>
+</div>
+<button class="glow-border-purple bg-primary-container/40 px-8 py-2 font-headline font-bold tracking-widest text-white text-[11px] hover:bg-primary transition-all active:scale-95">
+        INITIATE_UPLINK
+    </button>
+</nav>
+<main class="relative z-10">
+<section class="relative min-h-screen flex flex-col items-center justify-center pt-24 overflow-hidden">
+<div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?ixlib=rb-4.0.3&amp;auto=format&amp;fit=crop&amp;w=1920&amp;q=80')] bg-cover bg-center mix-blend-overlay opacity-40"></div>
+<div class="absolute inset-0 bg-gradient-to-b from-transparent via-background/80 to-background"></div>
+<div class="absolute top-[25%] left-[5%] hidden lg:block glass-terminal p-4 border-l-4 border-l-secondary scale-75 rotate-3">
+<div class="flex items-center gap-2 mb-2">
+<span class="w-2 h-2 bg-secondary animate-pulse rounded-full"></span>
+<span class="font-headline text-[9px] text-secondary tracking-widest uppercase">Node_Alpha_7</span>
+</div>
+<div class="h-10 w-32 bg-secondary/10 flex items-end gap-1 px-1">
+<div class="w-2 h-4 bg-secondary/40"></div>
+<div class="w-2 h-8 bg-secondary/60"></div>
+<div class="w-2 h-6 bg-secondary/40"></div>
+<div class="w-2 h-2 bg-secondary/80"></div>
+<div class="w-2 h-5 bg-secondary/50"></div>
+</div>
+</div>
+<div class="relative z-10 text-center px-4 max-w-6xl">
+<div class="inline-flex items-center gap-4 mb-8 px-6 py-2 glass-terminal border-secondary/20 skew-x-[-12deg]">
+<span class="font-headline text-[10px] tracking-[0.4em] uppercase text-secondary">A Strategic Cyber Warfare Simulation</span>
+<span class="w-2 h-2 bg-secondary rounded-full animate-ping"></span>
+</div>
+<div class="relative group">
+<div class="absolute -inset-8 bg-secondary/10 blur-[80px] group-hover:bg-secondary/20 transition-all duration-700"></div>
+<h1 class="font-headline text-7xl md:text-[11rem] font-black italic tracking-tighter hero-title-gradient leading-none mb-4 uppercase hologram-effect">
+                    CYBER NEXUS
+                </h1>
+</div>
+<h2 class="font-headline text-3xl md:text-5xl font-bold tracking-[0.3em] uppercase text-white mb-16 relative">
+<span class="text-primary">SECURE</span> BHARAT SUMMIT
+                <div class="absolute -bottom-4 left-1/2 -translate-x-1/2 w-1/2 h-[1px] bg-gradient-to-r from-transparent via-primary to-transparent"></div>
+</h2>
+<div class="flex flex-col md:flex-row gap-10 items-center justify-center mt-12">
+<div class="group relative">
+<div class="absolute -inset-1 bg-secondary/50 blur opacity-25 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
+<div class="relative flex items-center gap-5 glass-terminal glow-border-blue px-8 py-6 rounded-none">
+<span class="material-symbols-outlined text-secondary text-4xl">calendar_month</span>
+<div class="text-left">
+<p class="font-headline text-[10px] tracking-widest uppercase text-secondary/60">TEMPORAL_WINDOW</p>
+<p class="font-headline font-bold text-2xl text-white">2ND MAY 2026</p>
+</div>
+</div>
+</div>
+<div class="group relative">
+<div class="absolute -inset-1 bg-primary/50 blur opacity-25 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
+<div class="relative flex items-center gap-5 glass-terminal glow-border-purple px-8 py-6 rounded-none">
+<span class="material-symbols-outlined text-primary text-4xl">location_searching</span>
+<div class="text-left">
+<p class="font-headline text-[10px] tracking-widest uppercase text-primary/60">COMMAND_BASE</p>
+<p class="font-headline font-bold text-2xl text-white">GGSIPU-EDC HALL</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="absolute bottom-20 left-10 hidden xl:block glass-terminal glow-border-green p-6 w-72 skew-x-[-2deg] transition-transform hover:scale-105 cursor-crosshair">
+<div class="flex justify-between items-center mb-4">
+<p class="font-headline text-[11px] text-tertiary font-bold tracking-tighter">SYS_UPLINK: ACTIVE</p>
+<span class="material-symbols-outlined text-tertiary text-xs animate-spin-slow">settings_backup_restore</span>
+</div>
+<div class="space-y-2 opacity-80">
+<div class="h-1 bg-tertiary/20 w-full overflow-hidden">
+<div class="h-full bg-tertiary w-[88%]"></div>
+</div>
+<p class="font-body text-[11px] text-white/70 leading-relaxed uppercase tracking-tighter">
+                    Neural path established. Encryption: AES-4096. Status: Preparing for batch synchronization.
+                </p>
+</div>
+</div>
+</section>
+<section class="py-32 px-6 md:px-20 relative overflow-hidden bg-surface-container-low">
+<div class="absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none">
+<div class="absolute top-0 right-0 w-[800px] h-[800px] bg-[radial-gradient(circle_at_center,var(--neon-purple)_0%,transparent_70%)]"></div>
+<div class="absolute bottom-0 left-0 w-[800px] h-[800px] bg-[radial-gradient(circle_at_center,var(--neon-blue)_0%,transparent_70%)]"></div>
+</div>
+<div class="max-w-7xl mx-auto relative z-10">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="group relative h-full">
+<div class="absolute -inset-0.5 bg-gradient-to-b from-white/20 to-transparent opacity-0 group-hover:opacity-100 transition duration-500"></div>
+<div class="glass-terminal p-10 h-full flex flex-col border-white/10 transition-all duration-500 group-hover:translate-y-[-10px] group-hover:glow-border-purple">
+<div class="flex justify-between items-start mb-8">
+<span class="font-headline text-[10px] tracking-[0.4em] text-primary font-bold px-3 py-1 border border-primary/30">PHASE_01</span>
+<span class="material-symbols-outlined text-primary/40 text-4xl">cloud_queue</span>
+</div>
+<h3 class="font-headline text-3xl font-black mb-6 text-white uppercase italic">Round 1 (Online)</h3>
+<div class="flex items-end gap-3 mb-8">
+<span class="text-7xl font-black text-white leading-none">30</span>
+<div class="mb-2">
+<p class="font-headline text-xs uppercase tracking-widest text-primary">TH APRIL</p>
+<p class="font-headline text-[9px] text-white/40 leading-none mt-1">REMOTE_ENTRY</p>
+</div>
+</div>
+<div class="mt-auto border-t border-white/5 pt-8">
+<p class="text-sm text-on-surface-variant font-medium leading-relaxed tracking-tight">
+                                Global qualifying round via the Nexus Terminal. Only the elite proceed to the physical sector.
+                            </p>
+</div>
+</div>
+</div>
+<div class="md:col-span-1 glass-terminal p-1 flex flex-col glow-border-blue relative overflow-hidden group shadow-[0_0_50px_rgba(0,242,255,0.2)]">
+<div class="absolute inset-0 hologram-effect opacity-20"></div>
+<div class="bg-surface-container-highest p-10 h-full flex flex-col justify-center items-center text-center relative z-10">
+<div class="relative mb-6">
+<div class="absolute inset-0 bg-secondary blur-2xl opacity-20 animate-pulse"></div>
+<span class="material-symbols-outlined text-secondary text-7xl relative" data-weight="fill">military_tech</span>
+</div>
+<p class="font-headline text-[10px] tracking-[0.5em] uppercase text-secondary/70 mb-4 font-bold">GRAND_BOUNTY_REWARD</p>
+<h3 class="font-headline text-6xl md:text-7xl font-black italic text-secondary mb-4 drop-shadow-[0_0_15px_rgba(0,242,255,0.6)]">
+                            2 LAKH+
+                        </h3>
+<p class="font-headline text-xl font-bold text-white tracking-widest border-y border-white/10 py-2 w-full">PRIZE POOL</p>
+<div class="mt-12 grid grid-cols-2 gap-4 w-full">
+<div class="glass-terminal bg-white/5 border-white/10 p-3 hover:bg-white/10 transition-colors">
+<p class="text-[9px] font-headline text-secondary tracking-widest uppercase font-bold">INTERNSHIPS</p>
+</div>
+<div class="glass-terminal bg-white/5 border-white/10 p-3 hover:bg-white/10 transition-colors">
+<p class="text-[9px] font-headline text-secondary tracking-widest uppercase font-bold">GOODY_BAGS</p>
+</div>
+</div>
+</div>
+<div class="absolute top-0 left-0 w-full h-1 bg-secondary animate-[scan_3s_linear_infinite]"></div>
+</div>
+<div class="group relative h-full">
+<div class="absolute -inset-0.5 bg-gradient-to-b from-white/20 to-transparent opacity-0 group-hover:opacity-100 transition duration-500"></div>
+<div class="glass-terminal p-10 h-full flex flex-col border-white/10 transition-all duration-500 group-hover:translate-y-[-10px] group-hover:glow-border-green">
+<div class="flex justify-between items-start mb-8">
+<span class="font-headline text-[10px] tracking-[0.4em] text-tertiary font-bold px-3 py-1 border border-tertiary/30">PHASE_02</span>
+<span class="material-symbols-outlined text-tertiary/40 text-4xl">sensors</span>
+</div>
+<h3 class="font-headline text-3xl font-black mb-6 text-white uppercase italic">Round 2 (Offline)</h3>
+<div class="flex items-end gap-3 mb-8">
+<span class="text-7xl font-black text-white leading-none">02</span>
+<div class="mb-2">
+<p class="font-headline text-xs uppercase tracking-widest text-tertiary">ND MAY</p>
+<p class="font-headline text-[9px] text-white/40 leading-none mt-1">ONSITE_BATTLE</p>
+</div>
+</div>
+<div class="mt-auto border-t border-white/5 pt-8">
+<p class="text-sm text-on-surface-variant font-medium leading-relaxed tracking-tight">
+                                The final confrontation. GGSIPU-EDC Auditorium becomes your arena for direct terminal combat.
+                            </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-32 px-6 relative bg-surface overflow-hidden">
+<div class="max-w-6xl mx-auto relative z-10 glass-terminal glow-border-purple p-10 md:p-20 flex flex-col lg:flex-row items-center gap-16 shadow-[0_0_100px_rgba(214,0,255,0.15)] rounded-none">
+<div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/3px-tile.png')] opacity-20 pointer-events-none"></div>
+<div class="flex-1 text-center lg:text-left relative z-20">
+<div class="flex items-center gap-3 mb-6 justify-center lg:justify-start">
+<span class="w-12 h-[2px] bg-primary"></span>
+<span class="font-headline text-xs text-primary font-bold tracking-[0.4em]">PRIORITY_ACCESS</span>
+</div>
+<h2 class="font-headline text-6xl md:text-8xl font-black tracking-tighter text-white mb-8 uppercase italic leading-[0.9]">
+                    REGISTER <br/><span class="text-primary drop-shadow-[0_0_20px_rgba(214,0,255,0.5)]">NOW!</span>
+</h2>
+<p class="text-lg text-white/60 mb-12 max-w-xl leading-relaxed font-body">
+                    Initiate your protocol sequence. Join hundreds of security researchers and developers in the most intensive hackathon of 2026. Data packets are limited.
+                </p>
+<div class="flex flex-wrap gap-6 justify-center lg:justify-start">
+<button class="bg-primary text-white font-headline font-black px-12 py-6 rounded-none shadow-[0_0_30px_rgba(214,0,255,0.4)] hover:shadow-[0_0_50px_rgba(214,0,255,0.6)] transition-all hover:scale-105 active:scale-95 text-xl skew-x-[-10deg]">
+                        SECURE YOUR SLOT
+                    </button>
+<button class="bg-transparent text-white font-headline font-bold px-10 py-6 border-2 border-white/20 hover:border-white transition-all skew-x-[-10deg]">
+                        VIEW RULES
+                    </button>
+</div>
+</div>
+<div class="relative group scale-110">
+<div class="absolute -inset-6 bg-primary/20 blur-3xl group-hover:bg-primary/40 transition-all duration-700"></div>
+<div class="w-72 h-72 bg-black border-4 border-primary/60 p-6 relative z-10 glass-terminal shadow-[0_0_30px_rgba(214,0,255,0.2)]">
+<img alt="QR Code" class="w-full h-full object-cover grayscale brightness-125 contrast-125" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_jmBhLW6EHbj9jTR3doNOXUzDr4Tln9IP1U63IABTWSjBuGABjeWsWz4I4VqAuBtEBvV9QvIEmYENIICFzR-5PSB7EUx_bFewtQI23zR4hOmU61lS0-32Pm9avGQb48B0ceGCJI0z6spl9RDkYTq5oSnReC4qihIz6SLFFU5Mah3nDw1NJFBcbdYYz5r-REKPutXfGlzoKaMI7WyrROxB3aJ7GiAVPGZiQLj2uXvghiRHh0RxpfSNifWEPI3SroeAyV0kOzei8Nf9"/>
+<div class="absolute top-0 left-0 w-full h-[2px] bg-primary shadow-[0_0_15px_var(--neon-purple)] animate-[scan_4s_linear_infinite]"></div>
+</div>
+<div class="absolute -top-4 -right-4 w-12 h-12 border-t-4 border-r-4 border-secondary -z-10"></div>
+<div class="absolute -bottom-4 -left-4 w-12 h-12 border-b-4 border-l-4 border-secondary -z-10"></div>
+<p class="text-center font-headline text-[10px] tracking-[0.3em] text-secondary mt-8 uppercase font-bold animate-pulse">SCAN TO FAST-TRACK_ACCESS</p>
+</div>
+</div>
+</section>
+</main>
+<footer class="w-full py-20 border-t-2 border-primary/20 bg-surface-container-lowest relative overflow-hidden">
+<div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/diagmonds-light.png')] opacity-5"></div>
+<div class="max-w-7xl mx-auto px-12 flex flex-col md:flex-row items-center justify-between gap-12 relative z-10">
+<div class="flex flex-col items-center md:items-start gap-4">
+<div class="flex items-center gap-2">
+<div class="w-6 h-6 border border-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-secondary text-[10px]">bolt</span>
+</div>
+<div class="text-2xl font-headline font-black text-white italic">CYBER <span class="text-secondary">NEXUS</span></div>
+</div>
+<p class="font-headline text-[9px] tracking-[0.4em] uppercase text-white/30 font-bold">NEON RELIC PROTOCOL v1.0 // 2026 CYBER NEXUS CORE</p>
+</div>
+<div class="grid grid-cols-2 md:flex gap-x-12 gap-y-6">
+<a class="font-headline text-[10px] tracking-[0.3em] uppercase text-white/50 hover:text-secondary transition-all flex items-center gap-2 group" href="#">
+<span class="w-1 h-4 bg-secondary/20 group-hover:bg-secondary transition-colors"></span> TERMINAL
+            </a>
+<a class="font-headline text-[10px] tracking-[0.3em] uppercase text-white/50 hover:text-secondary transition-all flex items-center gap-2 group" href="#">
+<span class="w-1 h-4 bg-secondary/20 group-hover:bg-secondary transition-colors"></span> NEURAL_DISCORD
+            </a>
+<a class="font-headline text-[10px] tracking-[0.3em] uppercase text-white/50 hover:text-secondary transition-all flex items-center gap-2 group" href="#">
+<span class="w-1 h-4 bg-secondary/20 group-hover:bg-secondary transition-colors"></span> DATA_STREAM
+            </a>
+<a class="font-headline text-[10px] tracking-[0.3em] uppercase text-white/50 hover:text-secondary transition-all flex items-center gap-2 group" href="#">
+<span class="w-1 h-4 bg-secondary/20 group-hover:bg-secondary transition-colors"></span> ENCRYPTED_DOCS
+            </a>
+</div>
+</div>
+</footer>
+<style type="text/css">
+    @keyframes scan {
+        0% { top: 0; }
+        50% { top: 100%; }
+        100% { top: 0; }
+    }
+    .animate-spin-slow {
+        animation: spin 10s linear infinite;
+    }
+    @keyframes spin {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
+    }
+</style>
+
+</body></html>

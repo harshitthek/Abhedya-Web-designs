@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>CYBER NEXUS | SECURE BHARAT SUMMIT</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;900&amp;family=Manrope:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "surface-container-low": "#0a0817",
+                      "surface-tint": "#d2b4ff",
+                      "tertiary-dim": "#ff8da1",
+                      "secondary-container": "#004e58",
+                      "surface-container": "#0f0d23",
+                      "surface-variant": "#1d1a33",
+                      "on-error": "#ffffff",
+                      "surface-container-highest": "#1a162e",
+                      "surface-bright": "#221f3d",
+                      "primary-dim": "#c7a2ff",
+                      "on-primary": "#2b0062",
+                      "primary": "#d2b4ff",
+                      "secondary": "#00f0ff",
+                      "tertiary": "#ff3d71",
+                      "surface": "#070514",
+                      "background": "#050410",
+                      "outline": "#4a4663"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.125rem",
+                      "lg": "0.25rem",
+                      "xl": "0.5rem",
+                      "full": "9999px"
+              },
+              "fontFamily": {
+                      "headline": ["Space Grotesk"],
+                      "body": ["Manrope"],
+                      "label": ["Space Grotesk"]
+              }
+            },
+          },
+        }
+    </script>
+<style type="text/tailwindcss">
+        @layer utilities {
+            .glass-panel-extreme {
+                @apply bg-opacity-20 bg-clip-padding backdrop-blur-[40px];
+                background-color: rgba(15, 13, 35, 0.45);
+                border: 1px solid rgba(210, 180, 255, 0.15);
+                box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.8), 
+                            inset 0 0 15px rgba(255, 255, 255, 0.05);
+            }
+            .chromatic-border {
+                position: relative;
+            }
+            .chromatic-border::before {
+                content: '';
+                position: absolute;
+                inset: -2px;
+                background: linear-gradient(45deg, #00f0ff, #ff3d71, #d2b4ff, #00f0ff);
+                z-index: -1;
+                filter: blur(4px);
+                opacity: 0.6;
+            }
+            .plasma-text {
+                background: linear-gradient(to right, #00f0ff, #d2b4ff, #ff3d71, #00f0ff);
+                background-size: 200% auto;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                filter: drop-shadow(0 0 10px rgba(0, 240, 255, 0.8)) 
+                        drop-shadow(0 0 30px rgba(210, 180, 255, 0.4));
+            }
+            .energy-fog {
+                background: radial-gradient(circle at 50% 50%, rgba(210, 180, 255, 0.1) 0%, transparent 70%);
+                filter: blur(60px);
+            }
+            .depth-layer-1 { transform: translateZ(20px); }
+            .depth-layer-2 { transform: translateZ(50px); }
+            .depth-layer-3 { transform: translateZ(100px); perspective: 1000px; }
+        }
+        .hero-glow-container {
+            position: relative;
+        }
+        .hero-glow-container::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 140%;
+            height: 140%;
+            transform: translate(-50%, -50%);
+            background: radial-gradient(circle, rgba(0, 240, 255, 0.2) 0%, rgba(255, 61, 113, 0.1) 40%, transparent 70%);
+            pointer-events: none;
+            z-index: -1;
+        }
+        .scan-line {
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, rgba(0, 240, 255, 0.8), transparent);
+            position: absolute;
+            top: 0;
+            left: 0;
+            box-shadow: 0 0 15px #00f0ff;
+        }
+    </style>
+</head>
+<body class="bg-background text-white font-body selection:bg-secondary selection:text-black overflow-x-hidden">
+<nav class="fixed top-0 left-0 w-full z-[100] glass-panel-extreme border-b border-primary/20 flex items-center justify-between px-6 md:px-12 py-6">
+<div class="text-3xl font-black italic tracking-tighter plasma-text">
+        CYBER NEXUS
+    </div>
+<div class="hidden lg:flex gap-10 items-center">
+<a class="font-headline tracking-[0.2em] uppercase text-[10px] font-black text-white/50 hover:text-secondary transition-all flex items-center gap-2 group" href="#">
+<span class="w-1.5 h-1.5 bg-secondary rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></span>CHALLENGES
+        </a>
+<a class="font-headline tracking-[0.2em] uppercase text-[10px] font-black text-white/50 hover:text-secondary transition-all flex items-center gap-2 group" href="#">
+<span class="w-1.5 h-1.5 bg-secondary rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></span>TIMELINE
+        </a>
+<a class="font-headline tracking-[0.2em] uppercase text-[10px] font-black text-white/50 hover:text-secondary transition-all flex items-center gap-2 group" href="#">
+<span class="w-1.5 h-1.5 bg-secondary rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></span>PRIZES
+        </a>
+<a class="font-headline tracking-[0.2em] uppercase text-[10px] font-black text-white/50 hover:text-secondary transition-all flex items-center gap-2 group" href="#">
+<span class="w-1.5 h-1.5 bg-secondary rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></span>SQUAD
+        </a>
+</div>
+<button class="relative px-8 py-3 group">
+<div class="absolute inset-0 bg-secondary skew-x-[-12deg] group-hover:bg-primary transition-colors"></div>
+<span class="relative font-headline font-black tracking-widest text-black text-xs">REGISTER</span>
+</button>
+</nav>
+<main class="relative">
+<section class="relative min-h-screen flex flex-col items-center justify-center pt-24 overflow-hidden bg-[url('https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?ixlib=rb-4.0.3&amp;auto=format&amp;fit=crop&amp;w=1920&amp;q=80')] bg-cover bg-fixed">
+<div class="absolute inset-0 bg-[#050410]/85"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent"></div>
+<div class="absolute top-1/4 left-1/4 w-[800px] h-[800px] energy-fog opacity-40"></div>
+<div class="absolute bottom-1/4 right-1/4 w-[600px] h-[600px] energy-fog opacity-30 mix-blend-screen" style="background: radial-gradient(circle, rgba(255, 61, 113, 0.2), transparent 70%);"></div>
+<div class="relative z-10 text-center px-4 hero-glow-container">
+<div class="inline-block mb-8 px-6 py-1.5 glass-panel-extreme border border-secondary/40 rounded-full depth-layer-1">
+<span class="font-label text-[10px] tracking-[0.4em] uppercase text-secondary font-bold">A Strategic Cyber Warfare Simulation</span>
+</div>
+<h1 class="font-headline text-[15vw] md:text-[12rem] font-black italic tracking-tighter leading-none mb-2 plasma-text depth-layer-2 select-none">
+                CYBER<br class="md:hidden"/> NEXUS
+            </h1>
+<h2 class="font-headline text-3xl md:text-5xl font-black tracking-[0.3em] uppercase text-white mb-16 relative depth-layer-1">
+                SECURE BHARAT <span class="text-secondary/80">SUMMIT</span>
+<div class="absolute -bottom-4 left-1/2 -translate-x-1/2 w-48 h-[1px] bg-gradient-to-r from-transparent via-tertiary to-transparent shadow-[0_0_10px_#ff3d71]"></div>
+</h2>
+<div class="flex flex-col md:flex-row gap-10 items-center justify-center mt-8 depth-layer-3">
+<div class="relative group">
+<div class="absolute -inset-1 bg-gradient-to-r from-secondary to-primary blur opacity-25 group-hover:opacity-75 transition duration-1000 group-hover:duration-200"></div>
+<div class="relative flex items-center gap-5 glass-panel-extreme px-10 py-6 rounded-2xl border border-white/10">
+<span class="material-symbols-outlined text-secondary text-4xl" style="font-variation-settings: 'FILL' 1">calendar_today</span>
+<div class="text-left">
+<p class="font-label text-[10px] tracking-widest uppercase text-white/40">EVENT DATE</p>
+<p class="font-headline font-black text-2xl text-white">2ND MAY 2026</p>
+</div>
+</div>
+</div>
+<div class="relative group">
+<div class="absolute -inset-1 bg-gradient-to-r from-tertiary to-primary blur opacity-25 group-hover:opacity-75 transition duration-1000 group-hover:duration-200"></div>
+<div class="relative flex items-center gap-5 glass-panel-extreme px-10 py-6 rounded-2xl border border-white/10">
+<span class="material-symbols-outlined text-tertiary text-4xl" style="font-variation-settings: 'FILL' 1">location_on</span>
+<div class="text-left">
+<p class="font-label text-[10px] tracking-widest uppercase text-white/40">COMMAND CENTER</p>
+<p class="font-headline font-black text-2xl text-white">GGSIPU-EDC AUDITORIUM</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="absolute bottom-20 left-12 hidden lg:block glass-panel-extreme p-6 rounded-xl border-l-[6px] border-secondary w-72 depth-layer-2">
+<div class="flex justify-between items-center mb-3">
+<p class="font-label text-[10px] text-secondary font-black tracking-widest">SYSTEM_STATUS: ONLINE</p>
+<div class="w-2 h-2 rounded-full bg-secondary shadow-[0_0_8px_#00f0ff] animate-pulse"></div>
+</div>
+<p class="font-body text-xs text-white/60 leading-relaxed font-medium">Neural pathways established. Uplink stable at 99.8%. Preparing for synchronization of global protocols...</p>
+<div class="mt-4 h-1 bg-white/5 rounded-full overflow-hidden">
+<div class="h-full bg-secondary w-3/4 shadow-[0_0_10px_#00f0ff]"></div>
+</div>
+</div>
+</section>
+<section class="py-32 px-6 md:px-20 bg-surface relative overflow-hidden">
+<div class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-[1px] bg-gradient-to-r from-transparent via-primary/30 to-transparent"></div>
+<div class="max-w-7xl mx-auto relative z-10">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="md:col-span-1 glass-panel-extreme p-10 rounded-3xl relative overflow-hidden group chromatic-border">
+<div class="absolute top-0 right-0 p-4 opacity-10">
+<span class="material-symbols-outlined text-8xl">sensors</span>
+</div>
+<span class="font-label text-xs tracking-[0.4em] text-primary font-black block mb-6">PHASE_01</span>
+<h3 class="font-headline text-4xl font-black mb-8 text-white group-hover:text-primary transition-colors">Round 1 <span class="text-white/40 font-light block text-lg">(Online)</span></h3>
+<div class="flex items-end gap-3 mb-8">
+<span class="text-7xl font-black text-white leading-none">30</span>
+<div class="mb-2">
+<p class="text-sm uppercase font-black tracking-tighter text-white/50 leading-none">TH APRIL</p>
+<p class="text-[10px] text-primary font-bold leading-none mt-2 tracking-widest">REMOTE ENTRY</p>
+</div>
+</div>
+<div class="mt-4 pt-8 border-t border-white/5">
+<p class="text-sm text-white/60 leading-relaxed font-medium">Global qualifying round via the Nexus Terminal. Only the elite researchers proceed to the physical summit.</p>
+</div>
+</div>
+<div class="md:col-span-1 glass-panel-extreme border-2 border-secondary/50 p-10 rounded-3xl flex flex-col justify-center items-center text-center shadow-[0_0_50px_rgba(0,240,255,0.2)] relative overflow-hidden group">
+<div class="absolute inset-0 bg-gradient-to-br from-secondary/10 via-transparent to-primary/10"></div>
+<div class="relative z-10">
+<div class="mb-6 p-4 rounded-2xl bg-secondary/10 border border-secondary/30 inline-block shadow-[0_0_20px_rgba(0,240,255,0.2)]">
+<span class="material-symbols-outlined text-secondary text-6xl" style="font-variation-settings: 'FILL' 1">trophy</span>
+</div>
+<p class="font-label text-xs tracking-[0.5em] uppercase text-white/50 mb-4 font-black">GRAND_BOUNTY</p>
+<h3 class="font-headline text-6xl md:text-7xl font-black italic text-secondary filter drop-shadow-[0_0_20px_rgba(0,240,255,0.7)] leading-none mb-4">
+                            2 LAKH+
+                        </h3>
+<p class="font-headline text-xl font-black text-white tracking-[0.2em]">PRIZE POOL</p>
+<div class="mt-12 grid grid-cols-2 gap-4 w-full">
+<div class="glass-panel-extreme bg-white/5 p-4 rounded-xl border border-white/10 group-hover:border-secondary/40 transition-colors">
+<p class="text-[10px] text-secondary font-black uppercase tracking-widest">INTERNSHIPS</p>
+</div>
+<div class="glass-panel-extreme bg-white/5 p-4 rounded-xl border border-white/10 group-hover:border-secondary/40 transition-colors">
+<p class="text-[10px] text-secondary font-black uppercase tracking-widest">GOODY BAGS</p>
+</div>
+</div>
+</div>
+</div>
+<div class="md:col-span-1 glass-panel-extreme p-10 rounded-3xl relative overflow-hidden group chromatic-border">
+<div class="absolute top-0 right-0 p-4 opacity-10">
+<span class="material-symbols-outlined text-8xl">hub</span>
+</div>
+<span class="font-label text-xs tracking-[0.4em] text-tertiary font-black block mb-6">PHASE_02</span>
+<h3 class="font-headline text-4xl font-black mb-8 text-white group-hover:text-tertiary transition-colors">Round 2 <span class="text-white/40 font-light block text-lg">(Offline)</span></h3>
+<div class="flex items-end gap-3 mb-8">
+<span class="text-7xl font-black text-white leading-none">02</span>
+<div class="mb-2">
+<p class="text-sm uppercase font-black tracking-tighter text-white/50 leading-none">ND MAY</p>
+<p class="text-[10px] text-tertiary font-bold leading-none mt-2 tracking-widest">ONSITE BATTLE</p>
+</div>
+</div>
+<div class="mt-4 pt-8 border-t border-white/5">
+<p class="text-sm text-white/60 leading-relaxed font-medium">The final confrontation. GGSIPU-EDC Auditorium becomes your high-stakes arena for live cyber warfare.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-32 px-6 relative bg-background overflow-hidden">
+<div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')] opacity-20"></div>
+<div class="absolute -top-1/2 -right-1/4 w-[800px] h-[800px] bg-primary/10 rounded-full blur-[120px]"></div>
+<div class="absolute -bottom-1/2 -left-1/4 w-[800px] h-[800px] bg-secondary/10 rounded-full blur-[120px]"></div>
+<div class="max-w-6xl mx-auto relative z-10 glass-panel-extreme border-y border-white/10 rounded-[3rem] p-10 md:p-24 flex flex-col lg:flex-row items-center gap-20 shadow-[0_0_100px_rgba(0,0,0,1)]">
+<div class="flex-1 text-center lg:text-left">
+<div class="inline-flex items-center gap-3 px-4 py-1 bg-primary/20 border border-primary/40 rounded-full mb-8">
+<span class="relative flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+</span>
+<span class="text-[10px] font-black tracking-[0.2em] text-primary uppercase">Uplink Ready</span>
+</div>
+<h2 class="font-headline text-6xl md:text-8xl font-black tracking-tighter text-white mb-10 leading-none uppercase">
+                    REGISTER <br/>
+<span class="plasma-text italic">NOW!</span>
+</h2>
+<p class="text-xl text-white/50 mb-14 max-w-xl leading-relaxed font-medium">
+                    Initiate your protocol sequence. Join hundreds of security researchers and developers in the most intensive hackathon of 2026.
+                </p>
+<div class="flex flex-wrap gap-6 justify-center lg:justify-start">
+<button class="relative px-12 py-6 group overflow-hidden">
+<div class="absolute inset-0 bg-primary group-hover:bg-white transition-colors duration-300"></div>
+<div class="absolute inset-0 bg-gradient-to-r from-transparent via-white/40 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
+<span class="relative font-headline font-black tracking-[0.2em] text-black text-lg">SECURE YOUR SLOT</span>
+</button>
+<button class="px-10 py-6 glass-panel-extreme border border-white/20 text-white font-headline font-black text-lg tracking-widest hover:bg-white/10 transition-colors rounded-none skew-x-[-12deg]">
+<span class="inline-block skew-x-[12deg]">VIEW RULES</span>
+</button>
+</div>
+</div>
+<div class="relative group p-4 depth-layer-2">
+<div class="relative z-10 w-72 h-72 md:w-80 md:h-80 bg-[#0a0817] p-6 rounded-3xl border-2 border-secondary/50 shadow-[0_0_60px_rgba(0,240,255,0.3)]">
+<div class="absolute top-0 left-0 w-full overflow-hidden h-full pointer-events-none">
+<div class="scan-line"></div>
+</div>
+<div class="w-full h-full bg-white p-2 rounded-xl overflow-hidden shadow-[inset_0_0_20px_rgba(0,0,0,0.5)]">
+<img alt="QR Code" class="w-full h-full object-cover mix-blend-multiply opacity-90" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_jmBhLW6EHbj9jTR3doNOXUzDr4Tln9IP1U63IABTWSjBuGABjeWsWz4I4VqAuBtEBvV9QvIEmYENIICFzR-5PSB7EUx_bFewtQI23zR4hOmU61lS0-32Pm9avGQb48B0ceGCJI0z6spl9RDkYTq5oSnReC4qihIz6SLFFU5Mah3nDw1NJFBcbdYYz5r-REKPutXfGlzoKaMI7WyrROxB3aJ7GiAVPGZiQLj2uXvghiRHh0RxpfSNifWEPI3SroeAyV0kOzei8Nf9"/>
+</div>
+</div>
+<div class="absolute -inset-6 border border-secondary/20 rounded-[3rem] translate-x-6 translate-y-6 -z-10 group-hover:translate-x-8 group-hover:translate-y-8 transition-transform duration-700"></div>
+<div class="absolute -inset-6 border border-primary/20 rounded-[3rem] -translate-x-6 -translate-y-6 -z-10 group-hover:-translate-x-8 group-hover:-translate-y-8 transition-transform duration-700"></div>
+<div class="text-center mt-12">
+<p class="font-label text-[10px] tracking-[0.5em] text-secondary font-black uppercase mb-2">SCAN TO FAST-TRACK</p>
+<div class="w-full h-1 bg-secondary/10 rounded-full overflow-hidden">
+<div class="h-full bg-secondary w-1/3 shadow-[0_0_10px_#00f0ff]"></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="w-full py-24 border-t border-white/5 bg-[#050410] relative overflow-hidden">
+<div class="absolute top-0 left-0 w-full h-32 bg-gradient-to-b from-primary/5 to-transparent"></div>
+<div class="max-w-7xl mx-auto px-12 flex flex-col md:flex-row items-center justify-between gap-12 relative z-10">
+<div class="flex flex-col items-center md:items-start gap-4">
+<div class="text-3xl font-black italic tracking-tighter plasma-text">CYBER NEXUS</div>
+<p class="font-headline text-[10px] tracking-[0.4em] uppercase text-white/30 font-bold">NEON RELIC PROTOCOL v1.0 // 2024 CYBER NEXUS</p>
+</div>
+<div class="flex flex-wrap justify-center gap-10 md:gap-14">
+<a class="font-headline text-[10px] tracking-[0.3em] uppercase text-white/40 hover:text-tertiary transition-all duration-300 font-black relative group" href="#">
+                TERMINAL
+                <span class="absolute -bottom-2 left-0 w-0 h-[1px] bg-tertiary group-hover:w-full transition-all duration-300"></span>
+</a>
+<a class="font-headline text-[10px] tracking-[0.3em] uppercase text-white/40 hover:text-tertiary transition-all duration-300 font-black relative group" href="#">
+                NEURAL_DISCORD
+                <span class="absolute -bottom-2 left-0 w-0 h-[1px] bg-tertiary group-hover:w-full transition-all duration-300"></span>
+</a>
+<a class="font-headline text-[10px] tracking-[0.3em] uppercase text-white/40 hover:text-tertiary transition-all duration-300 font-black relative group" href="#">
+                DATA_STREAM
+                <span class="absolute -bottom-2 left-0 w-0 h-[1px] bg-tertiary group-hover:w-full transition-all duration-300"></span>
+</a>
+<a class="font-headline text-[10px] tracking-[0.3em] uppercase text-white/40 hover:text-tertiary transition-all duration-300 font-black relative group" href="#">
+                ENCRYPTED_DOCS
+                <span class="absolute -bottom-2 left-0 w-0 h-[1px] bg-tertiary group-hover:w-full transition-all duration-300"></span>
+</a>
+</div>
+</div>
+<div class="mt-20 text-center opacity-10 select-none pointer-events-none">
+<p class="text-[12rem] font-black font-headline tracking-tighter leading-none whitespace-nowrap">AUTHENTICATION REQUIRED AUTHENTICATION REQUIRED</p>
+</div>
+</footer>
+
+</body></html>

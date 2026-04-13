@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>CYBER NEXUS | SECURE BHARAT SUMMIT</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;900&amp;family=Manrope:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "surface-container-low": "#0b091a",
+                      "surface-tint": "#d2b4ff",
+                      "tertiary-dim": "#ff4d80",
+                      "secondary-container": "#008a9c",
+                      "surface-container": "#120e2b",
+                      "surface-variant": "#1c1833",
+                      "on-error": "#490013",
+                      "surface-container-highest": "#241e45",
+                      "surface-bright": "#2e2a55",
+                      "primary-dim": "#c09cff",
+                      "on-primary": "#3e0186",
+                      "on-primary-fixed-variant": "#3b0081",
+                      "error-container": "#a70138",
+                      "on-tertiary-fixed": "#380014",
+                      "tertiary-fixed-dim": "#ff769b",
+                      "on-surface-variant": "#d0ccdf",
+                      "surface-container-lowest": "#05040d",
+                      "primary": "#d2b4ff",
+                      "on-secondary": "#004d57",
+                      "inverse-on-surface": "#55526a",
+                      "surface-container-high": "#191535",
+                      "outline-variant": "#5a5575",
+                      "inverse-surface": "#fcf8ff",
+                      "primary-fixed-dim": "#a77df3",
+                      "on-secondary-fixed": "#003a42",
+                      "secondary-dim": "#00ebff",
+                      "secondary-fixed-dim": "#00ebff",
+                      "tertiary-container": "#ff1a66",
+                      "on-primary-fixed": "#000000",
+                      "inverse-primary": "#8a57eb",
+                      "surface": "#080614",
+                      "secondary-fixed": "#26f1ff",
+                      "secondary": "#00f0ff",
+                      "surface-dim": "#080614",
+                      "tertiary-fixed": "#ff8fa9",
+                      "outline": "#8a85a8",
+                      "error-dim": "#ff3366",
+                      "on-error-container": "#ffb2b9",
+                      "background": "#05040d",
+                      "primary-container": "#c09cff",
+                      "error": "#ff6e84",
+                      "on-secondary-fixed-variant": "#005964",
+                      "on-secondary-container": "#e8fbff",
+                      "primary-fixed": "#c09cff",
+                      "on-primary-container": "#30006a"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.125rem",
+                      "lg": "0.5rem",
+                      "xl": "1rem",
+                      "full": "9999px"
+              },
+              "fontFamily": {
+                      "headline": ["Space Grotesk"],
+                      "body": ["Manrope"],
+                      "label": ["Space Grotesk"]
+              }
+            },
+          },
+        }
+    </script>
+<style type="text/tailwindcss">
+        .glass-panel {
+            background: rgba(18, 14, 43, 0.4);
+            backdrop-filter: blur(24px) saturate(180%);
+            border: 1px solid rgba(210, 180, 255, 0.15);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.8), inset 0 0 0 1px rgba(255, 255, 255, 0.05);
+        }
+        .cyber-glow-text {
+            text-shadow: 
+                0 0 10px rgba(0, 240, 255, 0.8),
+                0 0 20px rgba(0, 240, 255, 0.4),
+                0 0 40px rgba(210, 180, 255, 0.3),
+                0 0 80px rgba(210, 180, 255, 0.1);
+        }
+        .volumetric-title {
+            background: linear-gradient(135deg, #00f0ff 0%, #d2b4ff 50%, #ff1a66 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            filter: drop-shadow(0 0 15px rgba(0, 240, 255, 0.6));
+        }
+        .vortex-bg {
+            background: 
+                radial-gradient(circle at 50% 50%, rgba(210, 180, 255, 0.1) 0%, transparent 60%),
+                radial-gradient(circle at 20% 30%, rgba(0, 240, 255, 0.05) 0%, transparent 40%),
+                radial-gradient(circle at 80% 70%, rgba(255, 26, 102, 0.05) 0%, transparent 40%);
+        }
+        .circuit-pattern {
+            background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10 10 L90 10 L90 90 L10 90 Z' fill='none' stroke='rgba(210,180,255,0.05)' stroke-width='0.5'/%3E%3Ccircle cx='10' cy='10' r='1' fill='rgba(210,180,255,0.1)'/%3E%3Ccircle cx='90' cy='10' r='1' fill='rgba(210,180,255,0.1)'/%3E%3Ccircle cx='90' cy='90' r='1' fill='rgba(210,180,255,0.1)'/%3E%3Ccircle cx='10' cy='90' r='1' fill='rgba(210,180,255,0.1)'/%3E%3C/svg%3E");
+        }
+        .floating-element {
+            transform: translateY(-5px) perspective(1000px) rotateX(2deg);
+            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .floating-element:hover {
+            transform: translateY(-15px) perspective(1000px) rotateX(5deg);
+        }
+        .nebula-fog {
+            mask-image: linear-gradient(to bottom, transparent, black 20%, black 80%, transparent);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body selection:bg-primary selection:text-on-primary-container overflow-x-hidden">
+<nav class="fixed top-0 left-0 w-full z-[100] bg-surface/40 backdrop-blur-2xl border-b border-primary/20 shadow-[0_4px_30px_rgba(0,0,0,0.5)] flex items-center justify-between px-6 md:px-12 py-6">
+<div class="text-3xl font-black italic tracking-tighter text-secondary cyber-glow-text flex items-center gap-2">
+<span class="material-symbols-outlined text-3xl">hub</span>
+        CYBER NEXUS
+    </div>
+<div class="hidden md:flex gap-10 items-center">
+<a class="font-['Space_Grotesk'] tracking-[0.2em] uppercase text-xs font-bold text-on-surface/50 hover:text-secondary hover:drop-shadow-[0_0_8px_rgba(0,240,255,0.5)] transition-all" href="#">CHALLENGES</a>
+<a class="font-['Space_Grotesk'] tracking-[0.2em] uppercase text-xs font-bold text-on-surface/50 hover:text-secondary hover:drop-shadow-[0_0_8px_rgba(0,240,255,0.5)] transition-all" href="#">TIMELINE</a>
+<a class="font-['Space_Grotesk'] tracking-[0.2em] uppercase text-xs font-bold text-on-surface/50 hover:text-secondary hover:drop-shadow-[0_0_8px_rgba(0,240,255,0.5)] transition-all" href="#">PRIZES</a>
+<a class="font-['Space_Grotesk'] tracking-[0.2em] uppercase text-xs font-bold text-on-surface/50 hover:text-secondary hover:drop-shadow-[0_0_8px_rgba(0,240,255,0.5)] transition-all" href="#">SQUAD</a>
+</div>
+<button class="bg-gradient-to-r from-secondary to-primary-container px-8 py-3 font-['Space_Grotesk'] font-black tracking-widest text-on-primary-container text-xs rounded-full hover:scale-110 active:scale-95 transform transition-all shadow-[0_0_25px_rgba(0,240,255,0.4)] hover:shadow-[0_0_40px_rgba(210,180,255,0.6)]">
+        REGISTER
+    </button>
+</nav>
+<main class="relative">
+<section class="relative min-h-screen flex flex-col items-center justify-center pt-20 overflow-hidden bg-[#05040d]">
+<div class="absolute inset-0 z-0">
+<div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?ixlib=rb-4.0.3&amp;auto=format&amp;fit=crop&amp;w=1920&amp;q=80')] bg-cover bg-center opacity-40 mix-blend-screen scale-110 blur-[2px]"></div>
+<div class="absolute inset-0 vortex-bg opacity-70"></div>
+<div class="absolute inset-0 circuit-pattern opacity-30"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-background/50"></div>
+<div class="absolute top-1/4 left-0 w-full h-px bg-gradient-to-r from-transparent via-secondary/50 to-transparent blur-sm"></div>
+<div class="absolute bottom-1/3 left-0 w-full h-px bg-gradient-to-r from-transparent via-primary/30 to-transparent blur-sm"></div>
+<div class="absolute bottom-0 left-0 w-full h-64 bg-gradient-to-t from-background to-transparent opacity-90 z-10"></div>
+</div>
+<div class="relative z-20 text-center px-4 max-w-7xl">
+<div class="inline-block mb-8 px-6 py-2 bg-surface-variant/40 backdrop-blur-xl border border-secondary/30 rounded-full shadow-[0_0_20px_rgba(0,240,255,0.1)] floating-element">
+<span class="font-label text-xs tracking-[0.4em] uppercase text-secondary font-black">A Strategic Cyber Warfare Simulation</span>
+</div>
+<div class="relative mb-8">
+<h1 class="font-headline text-7xl md:text-[12rem] font-black italic tracking-tighter leading-none volumetric-title select-none drop-shadow-[0_0_50px_rgba(0,240,255,0.4)]">
+                    CYBER<br class="md:hidden"/> NEXUS
+                </h1>
+<h1 class="absolute inset-0 font-headline text-7xl md:text-[12rem] font-black italic tracking-tighter leading-none opacity-20 blur-2xl select-none text-secondary">
+                    CYBER<br class="md:hidden"/> NEXUS
+                </h1>
+</div>
+<h2 class="font-headline text-2xl md:text-5xl font-bold tracking-[0.4em] uppercase text-on-surface mb-16 drop-shadow-[0_0_15px_rgba(255,255,255,0.3)]">
+                SECURE BHARAT SUMMIT
+            </h2>
+<div class="flex flex-col md:flex-row gap-10 items-center justify-center mt-12">
+<div class="group flex items-center gap-5 glass-panel px-10 py-6 rounded-2xl border-l-4 border-secondary/80 hover:shadow-[0_0_40px_rgba(0,240,255,0.2)] transition-all floating-element">
+<div class="p-3 bg-secondary/10 rounded-lg group-hover:bg-secondary/20 transition-colors">
+<span class="material-symbols-outlined text-secondary text-4xl">calendar_today</span>
+</div>
+<div class="text-left">
+<p class="font-label text-[10px] tracking-widest uppercase text-on-surface-variant font-bold">EVENT DATE</p>
+<p class="font-headline font-black text-2xl text-on-surface">2ND MAY 2026</p>
+</div>
+</div>
+<div class="group flex items-center gap-5 glass-panel px-10 py-6 rounded-2xl border-l-4 border-primary/80 hover:shadow-[0_0_40px_rgba(210,180,255,0.2)] transition-all floating-element" style="transition-delay: 100ms;">
+<div class="p-3 bg-primary/10 rounded-lg group-hover:bg-primary/20 transition-colors">
+<span class="material-symbols-outlined text-primary text-4xl">location_on</span>
+</div>
+<div class="text-left">
+<p class="font-label text-[10px] tracking-widest uppercase text-on-surface-variant font-bold">COMMAND CENTER</p>
+<p class="font-headline font-black text-2xl text-on-surface">GGSIPU-EDC AUDITORIUM</p>
+</div>
+</div>
+</div>
+</div>
+<div class="absolute bottom-20 left-12 hidden xl:block glass-panel p-6 rounded-2xl border-l-4 border-secondary max-w-[280px] floating-element z-30">
+<div class="flex items-center gap-2 mb-3">
+<span class="w-2 h-2 bg-secondary rounded-full animate-pulse shadow-[0_0_8px_#00f0ff]"></span>
+<p class="font-label text-xs text-secondary font-black uppercase tracking-widest">SYSTEM_STATUS: ONLINE</p>
+</div>
+<p class="font-body text-sm text-on-surface-variant leading-relaxed opacity-80">Neural pathways established. Uplink stable at 99.8%. Preparing for full global synchronization. Deploying core defense protocols.</p>
+</div>
+<div class="absolute bottom-20 right-12 hidden xl:block glass-panel p-6 rounded-2xl border-r-4 border-primary max-w-[280px] floating-element z-30">
+<div class="flex items-center justify-between mb-3">
+<p class="font-label text-xs text-primary font-black uppercase tracking-widest">THREAT_LEVEL: OMEGA</p>
+<span class="material-symbols-outlined text-primary text-sm">security</span>
+</div>
+<div class="w-full bg-surface-variant h-1 rounded-full overflow-hidden mb-4">
+<div class="w-3/4 h-full bg-primary shadow-[0_0_10px_#d2b4ff]"></div>
+</div>
+<p class="font-body text-xs text-on-surface-variant leading-relaxed opacity-60 italic">Real-time packet inspection active. Monitoring local nodes for intrusion attempts.</p>
+</div>
+</section>
+<section class="py-32 px-6 md:px-20 bg-surface relative overflow-hidden">
+<div class="absolute top-0 left-0 w-full h-full circuit-pattern opacity-10 pointer-events-none"></div>
+<div class="max-w-7xl mx-auto relative z-10">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+<div class="md:col-span-1 glass-panel p-10 rounded-3xl relative overflow-hidden group hover:border-primary/50 transition-all duration-500 floating-element">
+<div class="absolute -top-16 -right-16 w-48 h-48 bg-primary/20 rounded-full blur-[80px] group-hover:bg-primary/40 transition-all duration-700"></div>
+<span class="font-label text-sm tracking-[0.4em] text-primary font-black block mb-6">PHASE_01</span>
+<h3 class="font-headline text-4xl font-black mb-8 group-hover:text-primary transition-colors">Round 1 (Online)</h3>
+<div class="flex items-end gap-3 mb-10">
+<span class="text-7xl font-black text-on-surface leading-none drop-shadow-xl">30</span>
+<div class="mb-2">
+<p class="text-sm font-black uppercase tracking-tighter text-on-surface-variant leading-none">TH APRIL</p>
+<p class="text-xs font-bold text-primary leading-none mt-2">REMOTE ENTRY</p>
+</div>
+</div>
+<div class="pt-8 border-t border-outline-variant/30">
+<p class="text-base text-on-surface-variant leading-relaxed">Global qualifying round via the Nexus Terminal. Only the most skilled cyber operatives proceed to the physical theater of war.</p>
+</div>
+</div>
+<div class="md:col-span-1 bg-surface-container-highest/80 backdrop-blur-3xl border-2 border-secondary p-12 rounded-3xl flex flex-col justify-center items-center text-center shadow-[0_0_60px_rgba(0,240,255,0.25)] relative overflow-hidden floating-element" style="transition-delay: 50ms;">
+<div class="absolute inset-0 bg-gradient-to-br from-secondary/10 via-transparent to-primary/10"></div>
+<div class="absolute -top-20 -left-20 w-40 h-40 bg-secondary/30 rounded-full blur-[60px]"></div>
+<div class="absolute -bottom-20 -right-20 w-40 h-40 bg-primary/30 rounded-full blur-[60px]"></div>
+<span class="material-symbols-outlined text-secondary text-7xl mb-6 drop-shadow-[0_0_20px_rgba(0,240,255,0.6)]" data-weight="fill">military_tech</span>
+<p class="font-label text-sm tracking-[0.5em] uppercase text-on-surface-variant mb-4 font-black">GRAND_BOUNTY</p>
+<h3 class="font-headline text-6xl md:text-7xl font-black italic text-secondary cyber-glow-text leading-none mb-4">
+                        2 LAKH+
+                    </h3>
+<p class="font-headline text-2xl font-black text-on-surface tracking-widest">PRIZE POOL</p>
+<div class="mt-12 grid grid-cols-2 gap-4 w-full">
+<div class="bg-surface-container-low p-4 rounded-xl border border-secondary/20 shadow-inner group hover:border-secondary transition-all">
+<p class="text-xs text-secondary font-black uppercase tracking-widest">INTERNSHIPS</p>
+</div>
+<div class="bg-surface-container-low p-4 rounded-xl border border-primary/20 shadow-inner group hover:border-primary transition-all">
+<p class="text-xs text-primary font-black uppercase tracking-widest">GOODY BAGS</p>
+</div>
+</div>
+</div>
+<div class="md:col-span-1 glass-panel p-10 rounded-3xl relative overflow-hidden group hover:border-tertiary-dim/50 transition-all duration-500 floating-element" style="transition-delay: 100ms;">
+<div class="absolute -top-16 -right-16 w-48 h-48 bg-tertiary-dim/20 rounded-full blur-[80px] group-hover:bg-tertiary-dim/40 transition-all duration-700"></div>
+<span class="font-label text-sm tracking-[0.4em] text-tertiary-dim font-black block mb-6">PHASE_02</span>
+<h3 class="font-headline text-4xl font-black mb-8 group-hover:text-tertiary-dim transition-colors">Round 2 (Offline)</h3>
+<div class="flex items-end gap-3 mb-10">
+<span class="text-7xl font-black text-on-surface leading-none drop-shadow-xl">02</span>
+<div class="mb-2">
+<p class="text-sm font-black uppercase tracking-tighter text-on-surface-variant leading-none">ND MAY</p>
+<p class="text-xs font-bold text-tertiary-dim leading-none mt-2">ONSITE BATTLE</p>
+</div>
+</div>
+<div class="pt-8 border-t border-outline-variant/30">
+<p class="text-base text-on-surface-variant leading-relaxed">The final confrontation. GGSIPU-EDC Auditorium transforms into a high-stakes arena for live cyber defense simulations.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-32 px-6 relative bg-surface-container-low overflow-hidden">
+<div class="absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none">
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[1200px] h-[1200px] border border-secondary/20 rounded-full blur-3xl"></div>
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] border border-primary/20 rounded-full"></div>
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] border border-tertiary-dim/20 rounded-full"></div>
+</div>
+<div class="max-w-6xl mx-auto relative z-10 bg-surface-container-highest/60 backdrop-blur-3xl border border-white/5 rounded-[3rem] p-10 md:p-20 flex flex-col md:flex-row items-center gap-16 shadow-[0_0_100px_rgba(0,0,0,0.8)] overflow-hidden">
+<div class="absolute -top-[100%] -left-[100%] w-[300%] h-[300%] bg-gradient-to-br from-white/10 via-transparent to-transparent rotate-12 pointer-events-none"></div>
+<div class="flex-1 text-center md:text-left relative">
+<h2 class="font-headline text-6xl md:text-8xl font-black tracking-tighter text-on-surface mb-8 uppercase leading-tight">
+                    REGISTER <span class="text-secondary italic cyber-glow-text">NOW!</span>
+</h2>
+<p class="text-xl text-on-surface-variant mb-12 max-w-lg leading-relaxed font-medium">
+                    Initiate your protocol sequence. Join hundreds of elite security researchers and developers in the most intensive hackathon of 2026. Data integrity depends on you.
+                </p>
+<div class="flex flex-wrap gap-6 justify-center md:justify-start">
+<button class="group relative overflow-hidden bg-secondary text-surface font-headline font-black px-12 py-6 rounded-2xl shadow-[0_0_40px_rgba(0,240,255,0.4)] hover:shadow-[0_0_60px_rgba(0,240,255,0.6)] transition-all active:scale-95 text-xl">
+<span class="relative z-10">SECURE YOUR SLOT</span>
+<div class="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300"></div>
+</button>
+<button class="bg-surface-variant/50 backdrop-blur-md text-on-surface font-headline font-bold px-10 py-6 rounded-2xl border border-outline-variant/30 hover:bg-surface-bright transition-all shadow-xl">
+                        VIEW RULES
+                    </button>
+</div>
+</div>
+<div class="relative group">
+<div class="relative z-10 p-2 bg-gradient-to-br from-secondary via-primary to-tertiary-dim rounded-3xl shadow-[0_0_50px_rgba(0,240,255,0.3)] floating-element">
+<div class="w-64 h-64 bg-white p-6 rounded-2xl relative">
+<img alt="QR Code" class="w-full h-full object-cover" data-alt="A futuristic stylized QR code in minimalist black and white for a digital event check-in system" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_jmBhLW6EHbj9jTR3doNOXUzDr4Tln9IP1U63IABTWSjBuGABjeWsWz4I4VqAuBtEBvV9QvIEmYENIICFzR-5PSB7EUx_bFewtQI23zR4hOmU61lS0-32Pm9avGQb48B0ceGCJI0z6spl9RDkYTq5oSnReC4qihIz6SLFFU5Mah3nDw1NJFBcbdYYz5r-REKPutXfGlzoKaMI7WyrROxB3aJ7GiAVPGZiQLj2uXvghiRHh0RxpfSNifWEPI3SroeAyV0kOzei8Nf9"/>
+</div>
+</div>
+<div class="absolute -inset-6 border border-secondary/40 rounded-[2.5rem] -rotate-3 -z-10 group-hover:rotate-0 transition-transform duration-700"></div>
+<div class="absolute -inset-10 border border-primary/20 rounded-[3rem] rotate-3 -z-20 group-hover:rotate-0 transition-transform duration-700"></div>
+<p class="text-center font-label text-xs tracking-[0.5em] text-secondary mt-10 uppercase font-black cyber-glow-text">SCAN TO FAST-TRACK</p>
+</div>
+</div>
+</section>
+</main>
+<footer class="w-full py-24 border-t border-primary/10 bg-background relative overflow-hidden">
+<div class="absolute inset-0 circuit-pattern opacity-5"></div>
+<div class="max-w-7xl mx-auto px-12 relative z-10 flex flex-col md:flex-row items-center justify-between gap-16">
+<div class="flex flex-col items-center md:items-start gap-4">
+<div class="text-3xl font-black italic tracking-tighter text-primary cyber-glow-text">CYBER NEXUS</div>
+<p class="font-['Space_Grotesk'] text-xs tracking-[0.3em] uppercase text-on-surface-variant font-bold opacity-60">NEON RELIC PROTOCOL v1.0 // 2026 CYBER NEXUS</p>
+<p class="font-['Space_Grotesk'] text-[10px] text-on-surface-variant/40 mt-4 tracking-widest uppercase">Encryption Standard: AES-256-GCM</p>
+</div>
+<div class="grid grid-cols-2 md:flex md:gap-12 gap-8 text-center md:text-left">
+<a class="font-['Space_Grotesk'] text-xs tracking-[0.2em] uppercase text-on-surface-variant hover:text-secondary transition-all font-black" href="#">TERMINAL</a>
+<a class="font-['Space_Grotesk'] text-xs tracking-[0.2em] uppercase text-on-surface-variant hover:text-secondary transition-all font-black" href="#">NEURAL_DISCORD</a>
+<a class="font-['Space_Grotesk'] text-xs tracking-[0.2em] uppercase text-on-surface-variant hover:text-secondary transition-all font-black" href="#">DATA_STREAM</a>
+<a class="font-['Space_Grotesk'] text-xs tracking-[0.2em] uppercase text-on-surface-variant hover:text-secondary transition-all font-black" href="#">ENCRYPTED_DOCS</a>
+</div>
+</div>
+<div class="mt-20 text-center">
+<div class="inline-block px-10 py-1 bg-surface-variant/30 rounded-full border border-white/5">
+<p class="text-[9px] uppercase tracking-[1em] text-on-surface-variant/30 font-bold">End of Transmission</p>
+</div>
+</div>
+</footer>
+
+</body></html>
