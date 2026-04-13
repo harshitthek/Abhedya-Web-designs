@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>CYBER NEXUS | SECURE BHARAT SUMMIT</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Manrope:wght@300;400;500;600;700&amp;family=Inter:wght@400;500;600;700&amp;family=Syncopate:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-primary-fixed-variant": "#4b4260",
+                    "surface-container-high": "#2a273d",
+                    "error-container": "#93000a",
+                    "inverse-primary": "#635979",
+                    "secondary": "#cdbdff",
+                    "on-error-container": "#ffdad6",
+                    "on-tertiary-container": "#4c3f00",
+                    "inverse-on-surface": "#302e44",
+                    "error": "#ffb4ab",
+                    "background": "#0a0914",
+                    "surface-container": "#151329",
+                    "on-secondary-fixed-variant": "#4f00d0",
+                    "on-secondary": "#370096",
+                    "on-background": "#e4dffc",
+                    "on-surface-variant": "#cac3d8",
+                    "on-primary-container": "#fdf6ff",
+                    "secondary-fixed": "#e8deff",
+                    "surface-bright": "#39374d",
+                    "on-secondary-fixed": "#20005f",
+                    "on-primary-fixed": "#1f1732",
+                    "tertiary-fixed-dim": "#e9c400",
+                    "surface-container-lowest": "#070612",
+                    "surface-variant": "#232136",
+                    "surface-tint": "#cdc1e5",
+                    "outline-variant": "#3c384a",
+                    "tertiary-container": "#b39100",
+                    "surface": "#0a0914",
+                    "on-surface": "#e4dffc",
+                    "on-secondary-container": "#c0acff",
+                    "surface-dim": "#0a0914",
+                    "tertiary": "#ffda2d",
+                    "on-tertiary-fixed": "#221b00",
+                    "on-tertiary": "#221b00",
+                    "surface-container-highest": "#2b2842",
+                    "on-primary": "#342c49",
+                    "inverse-surface": "#e4dffc",
+                    "primary-fixed-dim": "#cdc1e5",
+                    "primary-container": "#4a4463",
+                    "surface-container-low": "#110f21",
+                    "on-error": "#690005",
+                    "secondary-fixed-dim": "#cdbdff",
+                    "outline": "#7e788c",
+                    "on-tertiary-fixed-variant": "#544600",
+                    "primary": "#cdc1e5",
+                    "tertiary-fixed": "#ffe170",
+                    "secondary-container": "#4500b5",
+                    "primary-fixed": "#eaddff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "1rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Space Grotesk"],
+                    "body": ["Manrope"],
+                    "label": ["Inter"],
+                    "futuristic": ["Syncopate"]
+            }
+          },
+        },
+      }
+    </script>
+<style type="text/tailwindcss">
+    .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+    .nebula-glow {
+        filter: blur(120px);
+        pointer-events: none;
+    }
+    .glass-card {
+        background: rgba(21, 19, 41, 0.4);
+        backdrop-filter: blur(24px);
+        border: 1px solid rgba(205, 193, 229, 0.08);
+        box-shadow: 0 10px 30px -10px rgba(0,0,0,0.5);
+    }
+    .premium-btn {
+        background: linear-gradient(135deg, #ffda2d 0%, #b39100 100%);
+        box-shadow: 0 4px 15px -2px rgba(255, 218, 45, 0.3), inset 0 1px 1px rgba(255,255,255,0.4);
+    }
+    .cyber-title {
+        font-family: 'Syncopate', sans-serif;
+        text-transform: uppercase;
+        letter-spacing: -0.05em;
+        line-height: 0.9;
+        position: relative;
+    }
+    .cyber-glow-text {
+        color: #e4dffc;
+        text-shadow: 0 0 10px rgba(205, 193, 229, 0.4);
+        -webkit-text-stroke: 1px rgba(205, 193, 229, 0.2);
+    }
+    .cyber-gold-text {
+        background: linear-gradient(to bottom, #ffda2d, #b39100);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        filter: drop-shadow(0 0 15px rgba(255, 218, 45, 0.5));
+    }
+    .frosted-divider {
+        height: 1px;
+        background: linear-gradient(90deg, transparent, rgba(205, 193, 229, 0.1), transparent);
+    }
+    .laser-pattern {
+        background-image: radial-gradient(circle at 50% 50%, rgba(124, 77, 255, 0.1) 0%, transparent 70%);
+        background-size: 100% 100%;
+    }
+    .beam-effect {
+        background: linear-gradient(45deg, transparent 48%, rgba(255, 218, 45, 0.05) 50%, transparent 52%);
+        background-size: 200% 200%;
+    }
+</style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="font-body selection:bg-tertiary selection:text-on-tertiary bg-background text-on-surface scroll-smooth">
+<header class="fixed top-0 w-full z-50 bg-background/60 backdrop-blur-2xl border-b border-outline-variant/20">
+<nav class="flex justify-between items-center px-6 py-5 max-w-7xl mx-auto">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-tertiary text-2xl" style="font-variation-settings: 'FILL' 1;">shield_with_heart</span>
+<span class="text-lg font-bold tracking-[0.3em] text-white font-futuristic">CYBER NEXUS</span>
+</div>
+<div class="hidden md:flex items-center gap-10 font-label text-[0.7rem] font-semibold tracking-[0.2em] text-white/60">
+<a class="text-tertiary hover:text-white transition-colors" href="#">HOME</a>
+<a class="hover:text-tertiary transition-colors" href="#timeline">TIMELINE</a>
+<a class="hover:text-tertiary transition-colors" href="#prizes">PRIZES</a>
+<a class="hover:text-tertiary transition-colors" href="#location">VENUE</a>
+</div>
+<button class="premium-btn text-on-tertiary px-5 py-2.5 font-label text-[0.7rem] font-bold tracking-widest rounded-md transition-all hover:scale-105 active:scale-95">
+            REGISTER
+        </button>
+</nav>
+</header>
+<main class="relative">
+<div class="absolute inset-0 overflow-hidden pointer-events-none">
+<div class="absolute top-[-10%] left-[15%] w-[600px] h-[600px] bg-secondary-container/20 rounded-full nebula-glow"></div>
+<div class="absolute top-[20%] right-[10%] w-[500px] h-[500px] bg-primary-container/10 rounded-full nebula-glow"></div>
+<div class="absolute inset-0 laser-pattern opacity-40"></div>
+<div class="absolute inset-0 beam-effect"></div>
+</div>
+<section class="relative min-h-screen flex flex-col items-center justify-center text-center px-6 pt-20">
+<div class="absolute inset-0 z-0 opacity-10 mix-blend-overlay">
+<img alt="Cosmic Background" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDoA-zpIqeuFwLZlg8qdTG0On-Drz5SjZawyfFaRgwYNPT9F92dbUYYtmCEsF2Yh25e-unhg856V5yFx25QZ7b_Fgj9wq4Rp4rpAsqasuA0dB71ZZZOz4RK5fSnz4qZqJqaHGX7RMxGQbwOnebAensSJjRtw-N7S1ZPCUqxiKW-fsvtNJ-AJz97H-pobOtM5q9cb12MYuly0d4FiA6fuSXfsCQUtT4H9x0ImLw__Ff-o5iwgN8FvlT_y4Dff-cuWZS4am6koGowXqA"/>
+</div>
+<div class="relative z-10 max-w-5xl">
+<div class="inline-flex items-center gap-3 px-5 py-2 rounded-full border border-tertiary/20 bg-surface-container-low/50 backdrop-blur-md mb-10 shadow-lg">
+<span class="relative flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-tertiary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-tertiary"></span>
+</span>
+<span class="font-label text-[0.6rem] font-bold tracking-[0.3em] text-on-surface-variant uppercase">REGISTRATION ACTIVE</span>
+</div>
+<h1 class="cyber-title text-6xl md:text-9xl font-bold mb-4 tracking-tighter">
+<span class="cyber-glow-text block">CYBER</span>
+<span class="cyber-gold-text block">NEXUS</span>
+</h1>
+<p class="font-headline text-lg md:text-xl tracking-[0.3em] text-on-surface/80 uppercase mb-14 font-medium flex items-center justify-center gap-4">
+<span>Secure Bharat Summit</span>
+<span class="w-1.5 h-1.5 rounded-full bg-outline-variant"></span>
+<span>2nd May 2026</span>
+</p>
+<div class="flex flex-col sm:flex-row items-center justify-center gap-6">
+<button class="w-full sm:w-auto premium-btn text-on-tertiary px-12 py-5 rounded-xl font-headline font-bold text-lg tracking-tight transition-all hover:scale-105 hover:brightness-110 border-t border-white/30">
+                    REGISTER NOW
+                </button>
+<button class="w-full sm:w-auto px-12 py-5 rounded-xl font-headline font-bold text-lg tracking-tight border border-white/10 bg-white/5 backdrop-blur-md hover:bg-white/10 transition-all shadow-xl">
+                    LEARN MORE
+                </button>
+</div>
+</div>
+<div class="absolute bottom-12 left-1/2 -translate-x-1/2 flex flex-col items-center gap-3 text-outline/50">
+<span class="font-label text-[0.6rem] tracking-[0.4em] uppercase font-semibold">ASCEND TO CONTENT</span>
+<span class="material-symbols-outlined animate-bounce text-sm">keyboard_double_arrow_down</span>
+</div>
+</section>
+<div class="frosted-divider"></div>
+<section class="py-32 px-6 max-w-7xl mx-auto relative" id="timeline">
+<div class="text-center mb-20">
+<p class="font-label text-[0.65rem] tracking-[0.5em] text-tertiary font-bold uppercase mb-4">THE JOURNEY</p>
+<h2 class="font-headline text-4xl md:text-6xl font-bold text-on-surface tracking-tight">EVENT TIMELINE</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-10 relative">
+<div class="absolute inset-0 bg-gradient-to-b from-transparent via-tertiary/5 to-transparent pointer-events-none rounded-3xl blur-3xl"></div>
+<div class="glass-card group p-12 rounded-2xl relative overflow-hidden transition-all hover:-translate-y-2 hover:shadow-[0_20px_40px_-15px_rgba(124,77,255,0.2)]">
+<div class="absolute top-0 right-0 w-40 h-40 bg-secondary/10 rounded-full blur-3xl -mr-20 -mt-20 group-hover:bg-secondary/20 transition-all"></div>
+<div class="relative z-10">
+<div class="flex items-center justify-between mb-10">
+<span class="font-label text-[0.6rem] font-bold tracking-[0.3em] text-secondary border border-secondary/20 bg-secondary/5 px-4 py-1.5 rounded-full">PHASE 01</span>
+<div class="w-14 h-14 rounded-xl bg-secondary/10 flex items-center justify-center border border-secondary/20">
+<span class="material-symbols-outlined text-secondary text-3xl">hub</span>
+</div>
+</div>
+<h3 class="font-headline text-3xl font-bold mb-3 tracking-tight">Round 1 (Online)</h3>
+<p class="font-headline text-tertiary font-bold text-lg mb-8">30th April 2026</p>
+<p class="text-on-surface-variant leading-relaxed text-sm">The digital gauntlet begins. Compete from anywhere in the world in a rigorous 12-hour capture-the-flag and security simulation. Top 50 teams advance to the physical summit.</p>
+</div>
+</div>
+<div class="glass-card group p-12 rounded-2xl relative overflow-hidden transition-all hover:-translate-y-2 hover:shadow-[0_20px_40px_-15px_rgba(255,218,45,0.2)]">
+<div class="absolute top-0 right-0 w-40 h-40 bg-tertiary/10 rounded-full blur-3xl -mr-20 -mt-20 group-hover:bg-tertiary/20 transition-all"></div>
+<div class="relative z-10">
+<div class="flex items-center justify-between mb-10">
+<span class="font-label text-[0.6rem] font-bold tracking-[0.3em] text-tertiary border border-tertiary/20 bg-tertiary/5 px-4 py-1.5 rounded-full">PHASE 02</span>
+<div class="w-14 h-14 rounded-xl bg-tertiary/10 flex items-center justify-center border border-tertiary/20">
+<span class="material-symbols-outlined text-tertiary text-3xl">token</span>
+</div>
+</div>
+<h3 class="font-headline text-3xl font-bold mb-3 tracking-tight">Round 2 (Offline)</h3>
+<p class="font-headline text-tertiary font-bold text-lg mb-8">2nd May 2026</p>
+<p class="text-on-surface-variant leading-relaxed text-sm">The final confrontation. Converge at the GGSIPU-EDC Auditorium for an intense 24-hour live hackathon and defense showcase in front of industry veterans.</p>
+</div>
+</div>
+</div>
+</section>
+<div class="frosted-divider"></div>
+<section class="py-32 relative overflow-hidden" id="prizes">
+<div class="max-w-7xl mx-auto px-6">
+<div class="glass-card rounded-[3rem] p-1.5 bg-gradient-to-br from-tertiary/10 to-transparent border-white/5">
+<div class="bg-surface-container-lowest/80 rounded-[2.8rem] p-12 md:p-24 flex flex-col items-center text-center">
+<div class="relative mb-10">
+<div class="absolute inset-0 bg-tertiary/30 blur-2xl rounded-full"></div>
+<span class="material-symbols-outlined text-tertiary text-8xl relative" style="font-variation-settings: 'FILL' 1;">military_tech</span>
+</div>
+<p class="font-label text-[0.7rem] tracking-[0.6em] text-on-surface-variant font-bold uppercase mb-6">PRIZE POOL VALUATION</p>
+<h2 class="font-headline text-6xl md:text-9xl font-black text-on-surface tracking-tighter mb-12">
+                        2 LAKH<span class="text-tertiary text-7xl md:text-8xl align-top">+</span>
+</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 w-full max-w-4xl">
+<div class="p-8 rounded-2xl bg-surface-container-low border border-white/5 shadow-inner flex flex-col items-center transition-all hover:border-tertiary/20">
+<p class="font-label text-[0.6rem] text-outline tracking-[0.3em] font-bold uppercase mb-4">CHAMPIONS</p>
+<p class="font-headline text-3xl font-bold text-white">₹1,00,000</p>
+</div>
+<div class="p-8 rounded-2xl bg-surface-container-low border border-white/5 shadow-inner flex flex-col items-center transition-all hover:border-tertiary/20">
+<p class="font-label text-[0.6rem] text-outline tracking-[0.3em] font-bold uppercase mb-4">RUNNER UP</p>
+<p class="font-headline text-3xl font-bold text-white">₹60,000</p>
+</div>
+<div class="p-8 rounded-2xl bg-surface-container-low border border-white/5 shadow-inner flex flex-col items-center transition-all hover:border-tertiary/20">
+<p class="font-label text-[0.6rem] text-outline tracking-[0.3em] font-bold uppercase mb-4">THIRD PLACE</p>
+<p class="font-headline text-3xl font-bold text-white">₹40,000</p>
+</div>
+</div>
+<p class="mt-14 text-on-surface-variant text-xs font-label tracking-[0.1em] uppercase max-w-xl opacity-60">Professional opportunities &amp; premium cybersecurity suite access for all finalists.</p>
+</div>
+</div>
+</div>
+</section>
+<div class="frosted-divider"></div>
+<section class="py-32 px-6 max-w-7xl mx-auto" id="location">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+<div class="space-y-10">
+<div>
+<p class="font-label text-[0.65rem] tracking-[0.5em] text-tertiary font-bold uppercase mb-5">HOST VENUE</p>
+<h2 class="font-headline text-4xl md:text-5xl font-bold text-on-surface tracking-tight leading-tight">GGSIPU-EDC<br/>AUDITORIUM</h2>
+</div>
+<div class="space-y-8">
+<div class="flex gap-6 group">
+<div class="w-14 h-14 flex-shrink-0 rounded-xl bg-secondary/10 flex items-center justify-center border border-secondary/20 group-hover:bg-secondary/20 transition-all">
+<span class="material-symbols-outlined text-secondary text-2xl">pin_drop</span>
+</div>
+<div>
+<h4 class="font-bold text-on-surface text-lg mb-1">Physical HQ</h4>
+<p class="text-on-surface-variant text-sm">Dwarka Sector 16C, New Delhi, Delhi 110078</p>
+</div>
+</div>
+<div class="flex gap-6 group">
+<div class="w-14 h-14 flex-shrink-0 rounded-xl bg-secondary/10 flex items-center justify-center border border-secondary/20 group-hover:bg-secondary/20 transition-all">
+<span class="material-symbols-outlined text-secondary text-2xl">electric_moped</span>
+</div>
+<div>
+<h4 class="font-bold text-on-surface text-lg mb-1">Accessibility</h4>
+<p class="text-on-surface-variant text-sm">Immediate vicinity of Dwarka Sector 14 Metro Station</p>
+</div>
+</div>
+<div class="flex gap-6 group">
+<div class="w-14 h-14 flex-shrink-0 rounded-xl bg-secondary/10 flex items-center justify-center border border-secondary/20 group-hover:bg-secondary/20 transition-all">
+<span class="material-symbols-outlined text-secondary text-2xl">podium</span>
+</div>
+<div>
+<h4 class="font-bold text-on-surface text-lg mb-1">Infrastructure</h4>
+<p class="text-on-surface-variant text-sm">Premium fiber connectivity and redundant power grid for uninterrupted hacking.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="relative">
+<div class="absolute -inset-1.5 bg-gradient-to-tr from-secondary/40 to-tertiary/40 rounded-[2rem] blur opacity-30"></div>
+<div class="relative glass-card rounded-[2rem] overflow-hidden border-white/10 shadow-2xl">
+<img alt="Venue Interior" class="w-full h-full object-cover min-h-[400px]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuArl4T5sXWRsTOIshcVBGMKoQT83OU7dWaNMYWSuopcZZn7n5K0v9vvAlfhh6Gx0xP_hFXGq_AQrsIGRXnj8I1kxZuaNv9KFZEZwO96QOzd1xeeOB6XP4Yf-AFYxi3u1qx_rPbQ_FyaCmALu5kMKvb_WsmHZ34HwMorETRUfLQY1Xg8rv39eL81JoQpv9SLbqbXORekPnDaNnVcVetymiqyoq5hxZY3V-clhGG_713IbAhlyfFj38p7H0Ah51Cab6DF8YfWk50FtmU"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background/90 via-background/20 to-transparent"></div>
+<div class="absolute bottom-8 left-8 right-8 flex justify-between items-center">
+<div class="flex flex-col">
+<span class="font-label text-[0.5rem] tracking-[0.3em] text-white/50 font-bold uppercase mb-1">COORDINATES</span>
+<span class="text-white text-xs font-mono font-semibold">28.5950° N, 77.0197° E</span>
+</div>
+<a class="w-14 h-14 rounded-full premium-btn flex items-center justify-center text-on-tertiary shadow-2xl hover:scale-110 transition-transform" href="https://maps.google.com" target="_blank">
+<span class="material-symbols-outlined">explore</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<div class="frosted-divider"></div>
+<section class="py-40 px-6 max-w-5xl mx-auto text-center">
+<div class="glass-card p-16 md:p-24 rounded-[4rem] border border-white/5 relative overflow-hidden">
+<div class="absolute top-0 left-1/2 -translate-x-1/2 w-[90%] h-[2px] bg-gradient-to-r from-transparent via-tertiary/40 to-transparent"></div>
+<div class="absolute bottom-0 left-1/2 -translate-x-1/2 w-[90%] h-[2px] bg-gradient-to-r from-transparent via-secondary/40 to-transparent"></div>
+<h2 class="font-headline text-4xl md:text-6xl font-bold text-white mb-8 tracking-tight">READY TO ASCEND?</h2>
+<p class="text-on-surface-variant mb-16 text-lg max-w-2xl mx-auto opacity-80">Claim your position in India's premier cybersecurity gauntlet. Final registration deadline: 25th April.</p>
+<div class="flex flex-col md:flex-row items-center justify-center gap-16">
+<div class="relative group p-6 bg-white rounded-3xl shadow-[0_0_60px_rgba(255,255,255,0.05)] transition-all hover:scale-105">
+<div class="absolute -inset-2 bg-gradient-to-tr from-tertiary to-secondary rounded-[2.5rem] blur opacity-10 group-hover:opacity-30"></div>
+<div class="w-48 h-48 bg-gray-50 rounded-2xl flex items-center justify-center relative overflow-hidden border border-gray-200">
+<div class="grid grid-cols-8 grid-rows-8 gap-1 p-3">
+<div class="bg-black/80 rounded-sm col-span-2 row-span-2"></div><div class="bg-black/10 rounded-sm"></div><div class="bg-black/80 rounded-sm"></div><div class="bg-black/20 rounded-sm"></div><div class="bg-black/80 rounded-sm col-span-2 row-span-2"></div>
+<div class="bg-black/10 rounded-sm"></div><div class="bg-black/40 rounded-sm"></div><div class="bg-black/10 rounded-sm"></div><div class="bg-black/80 rounded-sm"></div>
+<div class="bg-black/80 rounded-sm"></div><div class="bg-black/10 rounded-sm"></div><div class="bg-black/40 rounded-sm col-span-2 row-span-2"></div><div class="bg-black/10 rounded-sm"></div><div class="bg-black/80 rounded-sm"></div><div class="bg-black/10 rounded-sm"></div>
+</div>
+<div class="absolute inset-0 flex items-center justify-center pointer-events-none">
+<span class="font-label text-[0.5rem] text-black font-black uppercase bg-white/95 px-3 py-1.5 rounded-full border border-black/10 shadow-sm">SCAN TO JOIN</span>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-6 text-left">
+<div class="space-y-4">
+<div class="flex items-center gap-4">
+<div class="w-6 h-6 rounded-full bg-tertiary/10 border border-tertiary/30 flex items-center justify-center">
+<span class="material-symbols-outlined text-tertiary text-sm" style="font-variation-settings: 'wght' 700;">done_all</span>
+</div>
+<span class="text-sm font-semibold tracking-wide text-on-surface/90">Institutional subsidy for students</span>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-6 h-6 rounded-full bg-tertiary/10 border border-tertiary/30 flex items-center justify-center">
+<span class="material-symbols-outlined text-tertiary text-sm" style="font-variation-settings: 'wght' 700;">done_all</span>
+</div>
+<span class="text-sm font-semibold tracking-wide text-on-surface/90">Validated digital credentials</span>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-6 h-6 rounded-full bg-tertiary/10 border border-tertiary/30 flex items-center justify-center">
+<span class="material-symbols-outlined text-tertiary text-sm" style="font-variation-settings: 'wght' 700;">done_all</span>
+</div>
+<span class="text-sm font-semibold tracking-wide text-on-surface/90">Elite gear kits for finalists</span>
+</div>
+</div>
+<button class="mt-4 premium-btn text-on-tertiary px-12 py-5 rounded-xl font-headline font-black text-lg tracking-tight transition-all hover:scale-105 shadow-2xl border-t border-white/20">
+                        PORTAL ACCESS
+                    </button>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="w-full py-16 px-8 bg-surface-container-lowest border-t border-white/5">
+<div class="flex flex-col md:flex-row justify-between items-center gap-10 max-w-7xl mx-auto">
+<div class="flex flex-col gap-3 items-center md:items-start">
+<div class="text-white font-black text-xl font-futuristic tracking-[0.4em]">CYBER NEXUS</div>
+<p class="text-white/40 font-label text-[0.6rem] tracking-[0.2em]">© 2026 SECURE BHARAT SUMMIT. ALL RIGHTS RESERVED.</p>
+</div>
+<div class="flex flex-wrap justify-center gap-10 text-white/50 font-label text-[0.65rem] font-bold tracking-[0.2em] uppercase">
+<a class="hover:text-tertiary transition-all" href="#">IDENTITY</a>
+<a class="hover:text-tertiary transition-all" href="#">TWITTER</a>
+<a class="hover:text-tertiary transition-all" href="#">LINKEDIN</a>
+<a class="hover:text-tertiary transition-all" href="#">DISCORD</a>
+</div>
+<div class="flex items-center gap-6 text-white/20">
+<span class="material-symbols-outlined text-xl">encrypted</span>
+<span class="material-symbols-outlined text-xl">gpp_maybe</span>
+<span class="material-symbols-outlined text-xl">verified</span>
+</div>
+</div>
+</footer>
+
+</body></html>

@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>CYBER NEXUS | SECURE BHARAT SUMMIT</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Manrope:wght@300;400;500;600;700&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-primary-fixed-variant": "#4b4260",
+                    "surface-container-high": "#2a273d",
+                    "error-container": "#93000a",
+                    "inverse-primary": "#635979",
+                    "secondary": "#cdbdff",
+                    "on-error-container": "#ffdad6",
+                    "on-tertiary-container": "#4c3f00",
+                    "inverse-on-surface": "#302e44",
+                    "error": "#ffb4ab",
+                    "background": "#131125",
+                    "surface-container": "#1f1d32",
+                    "on-secondary-fixed-variant": "#4f00d0",
+                    "on-secondary": "#370096",
+                    "on-background": "#e4dffc",
+                    "on-surface-variant": "#cac3d8",
+                    "on-primary-container": "#fdf6ff",
+                    "secondary-fixed": "#e8deff",
+                    "surface-bright": "#39374d",
+                    "on-secondary-fixed": "#20005f",
+                    "on-primary-fixed": "#1f1732",
+                    "tertiary-fixed-dim": "#e9c400",
+                    "surface-container-lowest": "#0e0c20",
+                    "surface-variant": "#353248",
+                    "surface-tint": "#cdc1e5",
+                    "outline-variant": "#494455",
+                    "tertiary-container": "#caa900",
+                    "surface": "#131125",
+                    "on-surface": "#e4dffc",
+                    "on-secondary-container": "#c0acff",
+                    "surface-dim": "#131125",
+                    "tertiary": "#eac400",
+                    "on-tertiary-fixed": "#221b00",
+                    "on-tertiary": "#3a3000",
+                    "surface-container-highest": "#353248",
+                    "on-primary": "#342c49",
+                    "inverse-surface": "#e4dffc",
+                    "primary-fixed-dim": "#cdc1e5",
+                    "primary-container": "#776d8e",
+                    "surface-container-low": "#1b192e",
+                    "on-error": "#690005",
+                    "secondary-fixed-dim": "#cdbdff",
+                    "outline": "#948ea1",
+                    "on-tertiary-fixed-variant": "#544600",
+                    "primary": "#cdc1e5",
+                    "tertiary-fixed": "#ffe170",
+                    "secondary-container": "#5203d5",
+                    "primary-fixed": "#eaddff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Space Grotesk"],
+                    "body": ["Manrope"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .nebula-glow {
+            filter: blur(100px);
+            pointer-events: none;
+        }
+        .glass-card {
+            background: rgba(27, 25, 46, 0.4);
+            backdrop-filter: blur(20px);
+            border-top: 1px solid rgba(205, 193, 229, 0.1);
+            border-left: 1px solid rgba(205, 193, 229, 0.1);
+        }
+        body {
+            background-color: #131125;
+            color: #e4dffc;
+            overflow-x: hidden;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="font-body selection:bg-tertiary selection:text-on-tertiary">
+<!-- Top Navigation Bar -->
+<header class="fixed top-0 w-full z-50 bg-[#131125]/80 backdrop-blur-xl border-b border-[#494455]/15 shadow-[0_0_40px_rgba(55,0,150,0.1)]">
+<nav class="flex justify-between items-center px-6 py-4 max-w-7xl mx-auto">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[#7C4DFF]" style="font-variation-settings: 'FILL' 1;">security</span>
+<span class="text-xl font-bold tracking-widest text-[#eac400] font-headline">CYBER NEXUS</span>
+</div>
+<div class="hidden md:flex items-center gap-8 font-label text-[0.75rem] uppercase tracking-widest">
+<a class="text-[#eac400] font-bold transition-colors" href="#">HOME</a>
+<a class="text-white/70 hover:text-[#eac400] transition-colors" href="#timeline">TIMELINE</a>
+<a class="text-white/70 hover:text-[#eac400] transition-colors" href="#prizes">PRIZES</a>
+<a class="text-white/70 hover:text-[#eac400] transition-colors" href="#location">VENUE</a>
+</div>
+<button class="bg-tertiary text-on-tertiary px-6 py-2 font-label text-[0.75rem] font-bold tracking-widest rounded-lg scale-95 active:scale-90 duration-200 transition-all hover:shadow-[0_0_20px_rgba(234,196,0,0.3)]">
+                REGISTER
+            </button>
+</nav>
+</header>
+<main class="relative pt-20">
+<!-- Nebula Background Elements -->
+<div class="absolute top-20 left-[-10%] w-[500px] h-[500px] bg-secondary-container opacity-10 rounded-full nebula-glow"></div>
+<div class="absolute top-[40%] right-[-10%] w-[600px] h-[600px] bg-primary-container opacity-5 rounded-full nebula-glow"></div>
+<!-- Hero Section -->
+<section class="relative min-h-[795px] flex flex-col items-center justify-center text-center px-6 overflow-hidden">
+<div class="absolute inset-0 z-0 opacity-20">
+<img class="w-full h-full object-cover" data-alt="abstract cosmic background with swirling deep purple and blue stardust and faint glowing geometric grid lines" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDoA-zpIqeuFwLZlg8qdTG0On-Drz5SjZawyfFaRgwYNPT9F92dbUYYtmCEsF2Yh25e-unhg856V5yFx25QZ7b_Fgj9wq4Rp4rpAsqasuA0dB71ZZZOz4RK5fSnz4qZqJqaHGX7RMxGQbwOnebAensSJjRtw-N7S1ZPCUqxiKW-fsvtNJ-AJz97H-pobOtM5q9cb12MYuly0d4FiA6fuSXfsCQUtT4H9x0ImLw__Ff-o5iwgN8FvlT_y4Dff-cuWZS4am6koGowXqA"/>
+</div>
+<div class="relative z-10 max-w-5xl">
+<div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-outline-variant/30 bg-surface-container-low mb-8">
+<span class="w-2 h-2 rounded-full bg-tertiary animate-pulse"></span>
+<span class="font-label text-[0.65rem] tracking-[0.2em] text-on-surface-variant uppercase">REGISTRATION OPEN NOW</span>
+</div>
+<h1 class="font-headline text-6xl md:text-8xl lg:text-9xl font-bold tracking-tighter text-on-surface mb-6">
+                    CYBER <span class="text-tertiary drop-shadow-[0_0_30px_rgba(234,196,0,0.4)]">NEXUS</span>
+</h1>
+<p class="font-headline text-xl md:text-2xl tracking-[0.15em] text-on-surface-variant uppercase mb-12">
+                    Secure Bharat Summit <span class="mx-4 text-outline-variant">|</span> 2nd May 2026
+                </p>
+<div class="flex flex-col sm:flex-row items-center justify-center gap-6">
+<button class="w-full sm:w-auto bg-gradient-to-br from-tertiary to-tertiary-container text-on-tertiary px-10 py-5 rounded-lg font-headline font-bold text-lg tracking-tight hover:shadow-[0_0_30px_rgba(234,196,0,0.5)] transition-all transform hover:-translate-y-1">
+                        REGISTER NOW
+                    </button>
+<button class="w-full sm:w-auto px-10 py-5 rounded-lg font-headline font-bold text-lg tracking-tight border border-primary/20 bg-surface-bright/10 backdrop-blur hover:bg-surface-bright/20 transition-all">
+                        LEARN MORE
+                    </button>
+</div>
+</div>
+<div class="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-outline">
+<span class="font-label text-[0.65rem] tracking-[0.3em] uppercase">SCROLL TO DISCOVER</span>
+<span class="material-symbols-outlined animate-bounce">expand_more</span>
+</div>
+</section>
+<!-- Event Timeline -->
+<section class="py-24 px-6 max-w-7xl mx-auto" id="timeline">
+<div class="mb-16">
+<p class="font-label text-[0.75rem] tracking-[0.4em] text-tertiary uppercase mb-4 text-center md:text-left">THE JOURNEY</p>
+<h2 class="font-headline text-4xl md:text-5xl font-bold text-on-surface text-center md:text-left">EVENT TIMELINE</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12 relative">
+<!-- Decorative Connector for Desktop -->
+<div class="hidden md:block absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-[1px] bg-gradient-to-r from-transparent via-outline-variant/30 to-transparent"></div>
+<!-- Round 1 -->
+<div class="glass-card p-10 rounded-xl relative overflow-hidden">
+<div class="absolute top-0 right-0 w-32 h-32 bg-secondary/5 rounded-full blur-3xl -mr-16 -mt-16"></div>
+<div class="relative z-10">
+<div class="flex items-center justify-between mb-8">
+<span class="font-label text-[0.65rem] tracking-[0.2em] text-secondary border border-secondary/30 px-3 py-1 rounded-full">PHASE 01</span>
+<span class="material-symbols-outlined text-secondary text-4xl">cloud_done</span>
+</div>
+<h3 class="font-headline text-3xl font-bold mb-2">Round 1 (Online)</h3>
+<p class="font-headline text-tertiary text-lg mb-6">30th April 2026</p>
+<p class="text-on-surface-variant leading-relaxed">The digital gauntlet begins. Compete from anywhere in the world in a rigorous 12-hour capture-the-flag and security simulation. Top 50 teams advance to the physical summit.</p>
+</div>
+</div>
+<!-- Round 2 -->
+<div class="glass-card p-10 rounded-xl relative overflow-hidden">
+<div class="absolute top-0 right-0 w-32 h-32 bg-tertiary/5 rounded-full blur-3xl -mr-16 -mt-16"></div>
+<div class="relative z-10">
+<div class="flex items-center justify-between mb-8">
+<span class="font-label text-[0.65rem] tracking-[0.2em] text-tertiary border border-tertiary/30 px-3 py-1 rounded-full">PHASE 02</span>
+<span class="material-symbols-outlined text-tertiary text-4xl">stadium</span>
+</div>
+<h3 class="font-headline text-3xl font-bold mb-2">Round 2 (Offline)</h3>
+<p class="font-headline text-tertiary text-lg mb-6">2nd May 2026</p>
+<p class="text-on-surface-variant leading-relaxed">The final confrontation. Converge at the GGSIPU-EDC Auditorium for an intense 24-hour live hackathon and defense showcase in front of industry veterans.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Prize Pool & Impact -->
+<section class="py-24 relative overflow-hidden" id="prizes">
+<div class="max-w-7xl mx-auto px-6">
+<div class="glass-card rounded-[2rem] p-1 md:p-2 bg-gradient-to-br from-tertiary/10 to-transparent">
+<div class="bg-surface-container-lowest rounded-[1.8rem] p-12 md:p-24 flex flex-col items-center text-center">
+<span class="material-symbols-outlined text-tertiary text-7xl mb-8" style="font-variation-settings: 'FILL' 1;">trophy</span>
+<p class="font-label text-[0.85rem] tracking-[0.5em] text-on-surface-variant uppercase mb-4">TOTAL REWARDS VALUE</p>
+<h2 class="font-headline text-6xl md:text-8xl lg:text-9xl font-extrabold text-on-surface tracking-tighter mb-8">
+                            2 LAKH<span class="text-tertiary tracking-normal">+</span>
+</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 w-full max-w-4xl">
+<div class="p-6 rounded-xl bg-surface-container-low border border-outline-variant/10">
+<p class="font-label text-[0.65rem] text-outline tracking-widest uppercase mb-2">WINNER</p>
+<p class="font-headline text-2xl font-bold text-on-surface">₹1,00,000</p>
+</div>
+<div class="p-6 rounded-xl bg-surface-container-low border border-outline-variant/10">
+<p class="font-label text-[0.65rem] text-outline tracking-widest uppercase mb-2">RUNNER UP</p>
+<p class="font-headline text-2xl font-bold text-on-surface">₹60,000</p>
+</div>
+<div class="p-6 rounded-xl bg-surface-container-low border border-outline-variant/10">
+<p class="font-label text-[0.65rem] text-outline tracking-widest uppercase mb-2">THIRD PLACE</p>
+<p class="font-headline text-2xl font-bold text-on-surface">₹40,000</p>
+</div>
+</div>
+<p class="mt-12 text-on-surface-variant text-sm font-label tracking-wide uppercase max-w-2xl">Plus: Internship opportunities, startup credits, and premium cybersecurity tool subscriptions for top performing teams.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Location Section -->
+<section class="py-24 px-6 max-w-7xl mx-auto" id="location">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+<div>
+<p class="font-label text-[0.75rem] tracking-[0.4em] text-tertiary uppercase mb-4">VENUE</p>
+<h2 class="font-headline text-4xl md:text-5xl font-bold text-on-surface mb-8">GGSIPU-EDC AUDITORIUM</h2>
+<div class="space-y-6">
+<div class="flex gap-4">
+<div class="w-12 h-12 flex-shrink-0 rounded-lg bg-secondary/10 flex items-center justify-center">
+<span class="material-symbols-outlined text-secondary">location_on</span>
+</div>
+<div>
+<h4 class="font-bold text-on-surface">Physical HQ</h4>
+<p class="text-on-surface-variant">Dwarka Sector 16C, New Delhi, Delhi 110078</p>
+</div>
+</div>
+<div class="flex gap-4">
+<div class="w-12 h-12 flex-shrink-0 rounded-lg bg-secondary/10 flex items-center justify-center">
+<span class="material-symbols-outlined text-secondary">commute</span>
+</div>
+<div>
+<h4 class="font-bold text-on-surface">Accessibility</h4>
+<p class="text-on-surface-variant">Walking distance from Dwarka Sector 14 Metro Station (Blue Line)</p>
+</div>
+</div>
+<div class="flex gap-4">
+<div class="w-12 h-12 flex-shrink-0 rounded-lg bg-secondary/10 flex items-center justify-center">
+<span class="material-symbols-outlined text-secondary">hub</span>
+</div>
+<div>
+<h4 class="font-bold text-on-surface">Infrastructure</h4>
+<p class="text-on-surface-variant">High-speed gigabit fiber backbone and dedicated power redundancy for all participants.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="relative group">
+<div class="absolute -inset-1 bg-gradient-to-r from-secondary to-tertiary rounded-2xl blur opacity-20 group-hover:opacity-40 transition duration-1000"></div>
+<div class="relative glass-card rounded-2xl overflow-hidden aspect-video">
+<img class="w-full h-full object-cover" data-alt="Modern geometric interior of a minimalist auditorium at night with dramatic purple LED accent lighting and glass panels" src="https://lh3.googleusercontent.com/aida-public/AB6AXuArl4T5sXWRsTOIshcVBGMKoQT83OU7dWaNMYWSuopcZZn7n5K0v9vvAlfhh6Gx0xP_hFXGq_AQrsIGRXnj8I1kxZuaNv9KFZEZwO96QOzd1xeeOB6XP4Yf-AFYxi3u1qx_rPbQ_FyaCmALu5kMKvb_WsmHZ34HwMorETRUfLQY1Xg8rv39eL81JoQpv9SLbqbXORekPnDaNnVcVetymiqyoq5hxZY3V-clhGG_713IbAhlyfFj38p7H0Ah51Cab6DF8YfWk50FtmU"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent"></div>
+<div class="absolute bottom-6 left-6 right-6 flex justify-between items-end">
+<span class="font-label text-[0.65rem] bg-background/80 backdrop-blur-md px-4 py-2 rounded-lg border border-outline-variant/20 tracking-widest">MAP VIEW: NEW DELHI</span>
+<a class="w-12 h-12 rounded-full bg-tertiary flex items-center justify-center text-on-tertiary shadow-xl hover:scale-110 transition-transform" href="https://maps.google.com" target="_blank">
+<span class="material-symbols-outlined">directions</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Final Registration CTA -->
+<section class="py-32 px-6 max-w-4xl mx-auto text-center">
+<div class="glass-card p-12 md:p-20 rounded-[3rem] border border-tertiary/20 relative overflow-hidden">
+<div class="absolute top-0 left-1/2 -translate-x-1/2 w-[80%] h-[1px] bg-gradient-to-r from-transparent via-tertiary to-transparent"></div>
+<h2 class="font-headline text-4xl md:text-5xl font-bold text-on-surface mb-6">READY TO ASCEND?</h2>
+<p class="text-on-surface-variant mb-12 text-lg">Secure your spot in India's most prestigious cybersecurity summit. Registration closes 25th April.</p>
+<div class="flex flex-col md:flex-row items-center justify-center gap-12">
+<div class="p-4 bg-white rounded-2xl shadow-[0_0_50px_rgba(255,255,255,0.1)]">
+<div class="w-48 h-48 bg-gray-200 rounded-lg flex items-center justify-center relative overflow-hidden">
+<!-- QR Code Placeholder Design -->
+<div class="absolute inset-0 grid grid-cols-6 grid-rows-6 p-2 gap-1 opacity-80">
+<div class="bg-black rounded-[2px] col-span-2 row-span-2"></div>
+<div class="col-span-2"></div>
+<div class="bg-black rounded-[2px] col-span-2 row-span-2"></div>
+<div class="row-span-2"></div>
+<div class="col-span-2 row-span-2 bg-black/40"></div>
+<div class="bg-black rounded-[2px] col-span-2 row-span-2"></div>
+<div class="col-span-4"></div>
+</div>
+<span class="font-label text-[0.65rem] text-black font-bold uppercase z-10 bg-white/90 px-2 py-1 rounded">SCAN TO JOIN</span>
+</div>
+</div>
+<div class="flex flex-col gap-4 text-left">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-tertiary">check_circle</span>
+<span class="text-sm font-label tracking-wide">Free entry for students</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-tertiary">check_circle</span>
+<span class="text-sm font-label tracking-wide">Certification of participation</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-tertiary">check_circle</span>
+<span class="text-sm font-label tracking-wide">Swag kits for all offline finalists</span>
+</div>
+<button class="mt-4 bg-tertiary text-on-tertiary px-10 py-4 rounded-xl font-headline font-bold text-lg hover:shadow-[0_0_30px_rgba(234,196,0,0.4)] transition-all">
+                            REGISTER VIA FORM
+                        </button>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-12 px-8 bg-[#1b192e] border-t border-[#494455]/15 font-['Inter'] text-[0.75rem] uppercase tracking-[0.1em]">
+<div class="flex flex-col md:flex-row justify-between items-center gap-6 max-w-7xl mx-auto">
+<div class="flex flex-col gap-2 items-center md:items-start">
+<div class="text-[#eac400] font-bold text-lg font-headline tracking-widest">CYBER NEXUS</div>
+<p class="text-white/50">© 2026 CYBER NEXUS. SECURE BHARAT SUMMIT.</p>
+</div>
+<div class="flex flex-wrap justify-center gap-8 text-white/50">
+<a class="hover:text-[#cdc1e5] transition-all" href="#">www.SecureBharatSummit.xyz</a>
+<a class="hover:text-[#cdc1e5] transition-all" href="#">Twitter</a>
+<a class="hover:text-[#cdc1e5] transition-all" href="#">LinkedIn</a>
+<a class="hover:text-[#cdc1e5] transition-all" href="#">Discord</a>
+</div>
+<div class="flex items-center gap-4 text-white/30">
+<span class="material-symbols-outlined">security_update_good</span>
+<span class="material-symbols-outlined">verified_user</span>
+<span class="material-symbols-outlined">shield</span>
+</div>
+</div>
+</footer>
+</body></html>
