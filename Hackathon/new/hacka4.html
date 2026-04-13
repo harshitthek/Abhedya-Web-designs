@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>CYBER NEXUS | SECURE BHARAT SUMMIT</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Manrope:wght@300;400;500;600;700&amp;family=Syncopate:wght@400;700&amp;family=Michroma&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                "primary": "#CDC1E5",
+                "secondary": "#7C4DFF",
+                "tertiary": "#EAC400",
+                "background": "#0A0914",
+                "surface": "#121021",
+                "surface-bright": "#1C1935",
+                "outline": "#494455",
+                "on-surface": "#E4DFFC",
+                "on-surface-variant": "#948EA1",
+                "industrial-yellow": "#FFD700"
+            },
+            "borderRadius": {
+                "none": "0",
+                "sm": "2px",
+                "DEFAULT": "4px",
+                "lg": "8px",
+                "xl": "12px"
+            },
+            "fontFamily": {
+                "headline": ["Space Grotesk", "sans-serif"],
+                "stencil": ["Syncopate", "sans-serif"],
+                "tech": ["Michroma", "sans-serif"],
+                "body": ["Manrope", "sans-serif"]
+            }
+          },
+        },
+      }
+    </script>
+<style type="text/tailwindcss">
+        @layer base {
+            body {
+                @apply bg-background text-on-surface overflow-x-hidden;
+                background-image: 
+                    linear-gradient(rgba(20, 18, 40, 0.8) 1px, transparent 1px),
+                    linear-gradient(90deg, rgba(20, 18, 40, 0.8) 1px, transparent 1px);
+                background-size: 40px 40px;
+            }
+        }
+        .industrial-border {
+            border: 1px solid theme('colors.outline');
+            box-shadow: 4px 4px 0px 0px rgba(124, 77, 255, 0.2);
+        }
+        .hero-light-burst {
+            background: conic-gradient(from 0deg at 50% 50%, transparent 0deg, rgba(124, 77, 255, 0.1) 40deg, transparent 80deg, rgba(234, 196, 0, 0.1) 160deg, transparent 200deg, rgba(124, 77, 255, 0.1) 280deg, transparent 320deg);
+            filter: blur(40px);
+        }
+        .linear-streak {
+            background: linear-gradient(90deg, transparent, rgba(124, 77, 255, 0.2), transparent);
+            height: 1px;
+            width: 100%;
+            transform: rotate(-15deg);
+        }
+        .cyber-text-stencil {
+            -webkit-text-stroke: 1px theme('colors.on-surface');
+            color: transparent;
+            letter-spacing: -0.05em;
+        }
+        .nexus-text-glow {
+            color: theme('colors.industrial-yellow');
+            text-shadow: 0 0 15px rgba(234, 196, 0, 0.6);
+            -webkit-text-stroke: 2px #000;
+        }
+        .metallic-overlay {
+            background: linear-gradient(135deg, rgba(255,255,255,0.05) 0%, transparent 50%, rgba(0,0,0,0.2) 100%);
+        }
+        .diagonal-stripes {
+            background-image: repeating-linear-gradient(45deg, rgba(234,196,0,0.1) 0, rgba(234,196,0,0.1) 2px, transparent 0, transparent 50%);
+            background-size: 10px 10px;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="font-body selection:bg-tertiary selection:text-black">
+<header class="fixed top-0 w-full z-50 bg-background/90 backdrop-blur-md border-b-2 border-outline">
+<nav class="flex justify-between items-center px-4 py-3 max-w-7xl mx-auto">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 bg-tertiary flex items-center justify-center rounded-sm">
+<span class="material-symbols-outlined text-background font-bold text-xl">security</span>
+</div>
+<span class="text-lg font-bold tracking-tighter font-tech text-on-surface">CYBER <span class="text-tertiary">NEXUS</span></span>
+</div>
+<button class="bg-tertiary text-background px-4 py-1.5 font-tech text-[0.65rem] font-black uppercase industrial-border active:translate-y-0.5 transition-all">
+            REGISTER
+        </button>
+</nav>
+</header>
+<main class="relative">
+<div class="fixed inset-0 pointer-events-none opacity-30 z-0">
+<div class="absolute top-[10%] left-[-20%] linear-streak opacity-40"></div>
+<div class="absolute top-[40%] right-[-10%] linear-streak opacity-20 rotate-[20deg]"></div>
+<div class="absolute bottom-[20%] left-[5%] linear-streak opacity-30 rotate-[-5deg] !bg-tertiary"></div>
+</div>
+<section class="relative min-h-screen flex flex-col items-center justify-center pt-20 px-4 overflow-hidden">
+<div class="absolute inset-0 z-0 opacity-40">
+<img class="w-full h-full object-cover mix-blend-overlay grayscale" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDoA-zpIqeuFwLZlg8qdTG0On-Drz5SjZawyfFaRgwYNPT9F92dbUYYtmCEsF2Yh25e-unhg856V5yFx25QZ7b_Fgj9wq4Rp4rpAsqasuA0dB71ZZZOz4RK5fSnz4qZqJqaHGX7RMxGQbwOnebAensSJjRtw-N7S1ZPCUqxiKW-fsvtNJ-AJz97H-pobOtM5q9cb12MYuly0d4FiA6fuSXfsCQUtT4H9x0ImLw__Ff-o5iwgN8FvlT_y4Dff-cuWZS4am6koGowXqA"/>
+<div class="absolute inset-0 bg-gradient-to-b from-background via-transparent to-background"></div>
+</div>
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[140%] h-[140%] hero-light-burst z-0"></div>
+<div class="relative z-10 w-full max-w-4xl text-center space-y-4">
+<div class="inline-block px-3 py-1 bg-surface-bright industrial-border border-l-4 border-l-tertiary">
+<p class="font-tech text-[0.6rem] tracking-[0.3em] text-tertiary uppercase flex items-center gap-2">
+<span class="w-1.5 h-1.5 bg-tertiary animate-pulse"></span> SYSTEM: ONLINE / REGISTRATION OPEN
+                </p>
+</div>
+<h1 class="flex flex-col items-center leading-none">
+<span class="font-stencil text-7xl md:text-9xl font-black uppercase cyber-text-stencil tracking-widest block py-2">CYBER</span>
+<span class="font-stencil text-7xl md:text-9xl font-black uppercase nexus-text-glow tracking-tighter block -mt-4 md:-mt-8">NEXUS</span>
+</h1>
+<div class="py-4 border-y border-outline/30 inline-block px-10 mx-auto">
+<p class="font-tech text-xs md:text-sm tracking-[0.2em] text-on-surface-variant uppercase">
+                    Secure Bharat Summit <span class="mx-3 text-tertiary">|</span> 2nd May 2026
+                </p>
+</div>
+<div class="flex flex-col gap-4 pt-8 w-full max-w-xs mx-auto">
+<button class="bg-tertiary text-background font-tech text-sm font-black py-4 industrial-border hover:bg-white transition-all">
+                    REGISTER NOW
+                </button>
+<button class="bg-surface-bright/50 backdrop-blur-sm text-on-surface font-tech text-sm font-black py-4 industrial-border border-white/10">
+                    LEARN MORE
+                </button>
+</div>
+</div>
+<div class="absolute bottom-12 flex flex-col items-center gap-2">
+<div class="w-px h-12 bg-gradient-to-b from-transparent via-tertiary to-transparent"></div>
+<span class="font-tech text-[0.5rem] tracking-[0.5em] uppercase text-on-surface-variant">SCROLL TO ANALYZE</span>
+</div>
+</section>
+<section class="py-20 px-4 max-w-7xl mx-auto" id="timeline">
+<div class="mb-12 border-l-8 border-tertiary pl-6">
+<p class="font-tech text-[0.65rem] tracking-[0.4em] text-tertiary uppercase mb-1">DEPLOYMENT STAGES</p>
+<h2 class="font-stencil text-4xl font-black text-on-surface">EVENT TIMELINE</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-px bg-outline/20 industrial-border">
+<div class="bg-surface p-8 metallic-overlay group">
+<div class="flex justify-between items-start mb-6">
+<div class="px-2 py-0.5 bg-secondary/20 border border-secondary text-secondary font-tech text-[0.5rem] uppercase">
+                        UNIT 01
+                    </div>
+<span class="material-symbols-outlined text-secondary/50 text-3xl group-hover:text-secondary transition-colors">cloud_done</span>
+</div>
+<h3 class="font-stencil text-2xl font-bold mb-1 text-on-surface">Round 1 (Online)</h3>
+<p class="font-tech text-tertiary text-xs mb-6">30th April 2026</p>
+<div class="h-px w-12 bg-secondary mb-6"></div>
+<p class="text-on-surface-variant text-sm leading-relaxed font-body">
+                    The digital gauntlet begins. Compete from anywhere in the world in a rigorous 12-hour capture-the-flag and security simulation. Top 50 teams advance to the physical summit.
+                </p>
+</div>
+<div class="bg-surface p-8 metallic-overlay group border-t md:border-t-0 md:border-l border-outline/20">
+<div class="flex justify-between items-start mb-6">
+<div class="px-2 py-0.5 bg-tertiary/20 border border-tertiary text-tertiary font-tech text-[0.5rem] uppercase">
+                        UNIT 02
+                    </div>
+<span class="material-symbols-outlined text-tertiary/50 text-3xl group-hover:text-tertiary transition-colors">stadium</span>
+</div>
+<h3 class="font-stencil text-2xl font-bold mb-1 text-on-surface">Round 2 (Offline)</h3>
+<p class="font-tech text-tertiary text-xs mb-6">2nd May 2026</p>
+<div class="h-px w-12 bg-tertiary mb-6"></div>
+<p class="text-on-surface-variant text-sm leading-relaxed font-body">
+                    The final confrontation. Converge at the GGSIPU-EDC Auditorium for an intense 24-hour live hackathon and defense showcase in front of industry veterans.
+                </p>
+</div>
+</div>
+</section>
+<section class="py-20 bg-surface/50 border-y-2 border-outline/30 relative" id="prizes">
+<div class="absolute inset-0 diagonal-stripes opacity-5"></div>
+<div class="max-w-7xl mx-auto px-4 relative z-10">
+<div class="text-center mb-12">
+<span class="material-symbols-outlined text-tertiary text-6xl mb-4">trophy</span>
+<p class="font-tech text-[0.6rem] tracking-[0.5em] text-on-surface-variant uppercase">TOTAL ASSETS ALLOCATION</p>
+<h2 class="font-stencil text-6xl md:text-8xl font-black text-on-surface tracking-tighter mt-4">
+                    2 LAKH<span class="text-tertiary">+</span>
+</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<div class="bg-background p-6 industrial-border border-l-4 border-l-tertiary">
+<p class="font-tech text-[0.5rem] text-on-surface-variant tracking-widest uppercase mb-4">PRIMARY ALPHA</p>
+<div class="flex items-end justify-between">
+<span class="font-stencil text-3xl font-bold">₹1,00,000</span>
+<span class="text-[0.6rem] font-tech text-tertiary">WINNER</span>
+</div>
+</div>
+<div class="bg-background p-6 industrial-border border-l-4 border-l-secondary">
+<p class="font-tech text-[0.5rem] text-on-surface-variant tracking-widest uppercase mb-4">SECONDARY BETA</p>
+<div class="flex items-end justify-between">
+<span class="font-stencil text-3xl font-bold">₹60,000</span>
+<span class="text-[0.6rem] font-tech text-secondary">RUNNER UP</span>
+</div>
+</div>
+<div class="bg-background p-6 industrial-border border-l-4 border-l-outline">
+<p class="font-tech text-[0.5rem] text-on-surface-variant tracking-widest uppercase mb-4">TERTIARY GAMMA</p>
+<div class="flex items-end justify-between">
+<span class="font-stencil text-3xl font-bold">₹40,000</span>
+<span class="text-[0.6rem] font-tech text-on-surface-variant">3RD PLACE</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-24 px-4 max-w-7xl mx-auto" id="location">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+<div class="space-y-10">
+<div class="border-l-4 border-tertiary pl-6">
+<p class="font-tech text-[0.6rem] tracking-[0.4em] text-tertiary uppercase mb-1">GEO-LOCATION</p>
+<h2 class="font-stencil text-4xl font-black text-on-surface">GGSIPU-EDC AUDITORIUM</h2>
+</div>
+<div class="space-y-px bg-outline/20">
+<div class="flex gap-6 p-6 bg-surface metallic-overlay">
+<div class="w-12 h-12 flex-shrink-0 bg-background border border-outline flex items-center justify-center">
+<span class="material-symbols-outlined text-secondary">location_on</span>
+</div>
+<div>
+<h4 class="font-tech text-xs font-black text-on-surface uppercase mb-1">Physical HQ</h4>
+<p class="text-on-surface-variant text-sm">Dwarka Sector 16C, New Delhi, Delhi 110078</p>
+</div>
+</div>
+<div class="flex gap-6 p-6 bg-surface metallic-overlay">
+<div class="w-12 h-12 flex-shrink-0 bg-background border border-outline flex items-center justify-center">
+<span class="material-symbols-outlined text-secondary">commute</span>
+</div>
+<div>
+<h4 class="font-tech text-xs font-black text-on-surface uppercase mb-1">Accessibility</h4>
+<p class="text-on-surface-variant text-sm">Walking distance from Dwarka Sector 14 Metro Station</p>
+</div>
+</div>
+<div class="flex gap-6 p-6 bg-surface metallic-overlay">
+<div class="w-12 h-12 flex-shrink-0 bg-background border border-outline flex items-center justify-center">
+<span class="material-symbols-outlined text-secondary">hub</span>
+</div>
+<div>
+<h4 class="font-tech text-xs font-black text-on-surface uppercase mb-1">Backbone</h4>
+<p class="text-on-surface-variant text-sm">Gigabit fiber &amp; dedicated power redundancy.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="relative industrial-border p-2 bg-outline/20">
+<div class="relative aspect-video overflow-hidden">
+<img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuArl4T5sXWRsTOIshcVBGMKoQT83OU7dWaNMYWSuopcZZn7n5K0v9vvAlfhh6Gx0xP_hFXGq_AQrsIGRXnj8I1kxZuaNv9KFZEZwO96QOzd1xeeOB6XP4Yf-AFYxi3u1qx_rPbQ_FyaCmALu5kMKvb_WsmHZ34HwMorETRUfLQY1Xg8rv39eL81JoQpv9SLbqbXORekPnDaNnVcVetymiqyoq5hxZY3V-clhGG_713IbAhlyfFj38p7H0Ah51Cab6DF8YfWk50FtmU"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent"></div>
+<div class="absolute bottom-4 left-4 flex items-center gap-3">
+<div class="bg-background/90 px-3 py-1.5 industrial-border text-[0.6rem] font-tech text-on-surface-variant uppercase">
+                            AREA: NW-DELHI
+                        </div>
+<a class="w-10 h-10 bg-tertiary flex items-center justify-center text-background industrial-border hover:scale-105 transition-transform" href="https://maps.google.com" target="_blank">
+<span class="material-symbols-outlined font-bold">directions</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-24 px-4">
+<div class="max-w-4xl mx-auto bg-surface industrial-border border-t-8 border-t-tertiary metallic-overlay p-8 md:p-16 relative">
+<div class="absolute top-4 right-4 diagonal-stripes w-20 h-20 opacity-20"></div>
+<div class="text-center mb-16">
+<h2 class="font-stencil text-4xl md:text-5xl font-black text-on-surface mb-6">READY TO ASCEND?</h2>
+<div class="w-24 h-1 bg-tertiary mx-auto mb-6"></div>
+<p class="text-on-surface-variant font-body text-sm max-w-lg mx-auto leading-relaxed">
+                    Secure your spot in India's most prestigious cybersecurity summit. Registration closes 25th April. Initial protocols active.
+                </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+<div class="flex flex-col items-center">
+<div class="p-6 bg-white industrial-border border-black shadow-[0_0_20px_rgba(255,255,255,0.1)] relative">
+<div class="w-40 h-40 bg-gray-100 flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 grid grid-cols-8 grid-rows-8 gap-1 opacity-90 p-2">
+<div class="bg-black col-span-2 row-span-2"></div><div class="col-span-4"></div><div class="bg-black col-span-2 row-span-2"></div>
+<div class="row-span-4"></div><div class="bg-black col-span-4 row-span-4 opacity-50"></div><div class="row-span-4"></div>
+<div class="bg-black col-span-2 row-span-2"></div><div class="col-span-4"></div><div class="bg-black col-span-2 row-span-2"></div>
+</div>
+<span class="relative z-10 font-tech text-[0.5rem] font-black bg-white px-2 py-1 text-black">LINK_AUTH_TOKEN</span>
+</div>
+</div>
+<p class="mt-4 font-tech text-[0.55rem] text-tertiary tracking-widest uppercase">SCAN TO INITIALIZE</p>
+</div>
+<div class="space-y-6">
+<div class="space-y-4">
+<div class="flex items-center gap-4 text-on-surface">
+<span class="material-symbols-outlined text-tertiary text-xl">check_box</span>
+<span class="text-xs font-tech uppercase tracking-tighter">Student Tier Access [FREE]</span>
+</div>
+<div class="flex items-center gap-4 text-on-surface">
+<span class="material-symbols-outlined text-tertiary text-xl">check_box</span>
+<span class="text-xs font-tech uppercase tracking-tighter">Digital Credentials Pack</span>
+</div>
+<div class="flex items-center gap-4 text-on-surface">
+<span class="material-symbols-outlined text-tertiary text-xl">check_box</span>
+<span class="text-xs font-tech uppercase tracking-tighter">Hardware Swag Kit (Finalists)</span>
+</div>
+</div>
+<button class="w-full bg-tertiary text-background py-5 industrial-border font-tech text-xs font-black hover:bg-white transition-all">
+                        SUBMIT CLEARANCE FORM
+                    </button>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="w-full py-16 px-4 bg-background border-t-4 border-outline">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start gap-12">
+<div class="space-y-4">
+<div class="text-tertiary font-tech font-black text-2xl tracking-tighter">CYBER NEXUS</div>
+<p class="text-on-surface-variant font-tech text-[0.6rem] tracking-wider uppercase">© 2026 NEXUS CORE / SECURE BHARAT SUMMIT</p>
+</div>
+<div class="grid grid-cols-2 gap-x-12 gap-y-4">
+<a class="text-xs font-tech text-on-surface-variant hover:text-tertiary transition-colors uppercase" href="#">Network</a>
+<a class="text-xs font-tech text-on-surface-variant hover:text-tertiary transition-colors uppercase" href="#">Twitter</a>
+<a class="text-xs font-tech text-on-surface-variant hover:text-tertiary transition-colors uppercase" href="#">LinkedIn</a>
+<a class="text-xs font-tech text-on-surface-variant hover:text-tertiary transition-colors uppercase" href="#">Discord</a>
+</div>
+<div class="flex gap-4 p-2 bg-surface industrial-border">
+<span class="material-symbols-outlined text-tertiary text-sm">security_update_good</span>
+<span class="material-symbols-outlined text-tertiary text-sm">verified_user</span>
+<span class="material-symbols-outlined text-tertiary text-sm">shield</span>
+</div>
+</div>
+</footer>
+
+</body></html>
